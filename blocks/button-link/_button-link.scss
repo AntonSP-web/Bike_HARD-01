@@ -1,0 +1,13 @@
+.button-link {
+  @include fonts($linkFontSize, 18px, 600);
+  @include flex(center);
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 16px 10px;
+  color: $btnColor;
+  background: $btnBackgroundColor;
+  border-radius: 4px;
+  width: 180px;
+  letter-spacing: 1px;
+  cursor: url(./images/cursor.svg), auto;
+}

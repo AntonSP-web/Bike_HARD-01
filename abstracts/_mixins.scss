@@ -1,6 +1,7 @@
-@mixin flex($align) {
+@mixin flex($justify: unset, $align: unset) {
   display: flex;
-  justify-content: $align;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin fonts($size, $height, $weight) {

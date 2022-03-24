@@ -1,0 +1,7 @@
+.paragraph__title {
+  @include fonts($title-fontSize, 60px, 700);
+  margin: 0 0 50px;
+  color: $base-fontColor;
+  letter-spacing: -.5px;
+
+}

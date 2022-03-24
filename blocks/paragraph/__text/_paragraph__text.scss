@@ -1,0 +1,6 @@
+.paragraph__text {
+  @include fonts($paragraph-fontSize, 28px, normal);
+  margin: 0;
+  color: $paragraph-fontColor;
+  opacity: .7;
+}
