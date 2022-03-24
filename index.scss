@@ -1,0 +1,12 @@
+@import './vendor/normalize';
+@import './vendor/font';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './blocks/page/page';
+@import './blocks/header/header';
+@import './blocks/header/__list/header__list';
+@import './blocks/header/__item/header__item';
+@import './blocks/header/__link/header__link';
+@import './blocks/main/main';
+@import './blocks/routes/routes';
