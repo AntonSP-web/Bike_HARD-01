@@ -396,6 +396,10 @@ template {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
           align-items: unset;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -429,6 +433,10 @@ template {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
           align-items: unset;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
 }
 
@@ -441,8 +449,11 @@ template {
 }
 
 .routes__image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 610px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .routes__image {
@@ -486,6 +497,10 @@ template {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
           align-items: unset;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
@@ -508,6 +523,10 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .bike-type__name {
@@ -544,5 +563,79 @@ template {
   padding: 20px 50px;
   -webkit-filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 120px 120px 60px 0;
+}
+
+.quote__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 470px;
+  padding-left: 10px;
+}
+
+.quote__image-wrapper {
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quote__image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.quote__text {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #151515;
+}
+
+.quote__name {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #151515;
+  margin: 0;
+}
+
+.quote__title {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #222;
+  opacity: .7;
+  margin: 6px 0 0;
 }
 /*# sourceMappingURL=index.css.map */

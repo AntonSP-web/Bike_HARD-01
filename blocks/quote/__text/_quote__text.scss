@@ -1,0 +1,6 @@
+.quote__text {
+  @include fonts($quoteFontSize, 44px, 600);
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: $base-fontColor;
+}

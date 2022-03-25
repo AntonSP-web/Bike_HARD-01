@@ -1,0 +1,5 @@
+.quote__name {
+  @include fonts($quote-nameFontSize, 32px, 500);
+  color: $base-fontColor;
+  margin: 0;
+}

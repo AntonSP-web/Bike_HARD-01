@@ -1,0 +1,5 @@
+.quote__wrapper {
+  @include flex(space-between, $direction: column);
+  max-width: 470px;
+  padding-left: 10px;
+}
