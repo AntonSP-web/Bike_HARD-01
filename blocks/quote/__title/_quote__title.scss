@@ -1,0 +1,6 @@
+.quote__title {
+  @include fonts($quote-titleFontSize, 28px, 400);
+  color: $paragraph-fontColor;
+  opacity: .7;
+  margin: 6px 0 0;
+}
