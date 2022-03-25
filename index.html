@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   <link rel="stylesheet" href="./index.css">
-  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="page">
@@ -41,9 +41,9 @@
         </div>
 
         <div class="position-wrapper">
-          <div class="bike-sticky">
-            <img src="./images/bike_cannondale.png" alt="велосипед Cannondale">
-          </div>
+          <!-- <div class="bike-sticky"> -->
+            <img src="./images/bike_cannondale.png" alt="велосипед Cannondale" class="bike-sticky">
+          <!-- </div> -->
         </div>
       </section>
 
@@ -61,7 +61,76 @@
         </div>
       </section>
 
+      <section class="bikes">
+        <div class="bikes-header">
+          <h2 class="bikes-header__title">Велосипеды</h2>
+          <ul class="bikes-header__list">
+            <li class="bikes-header__item">
+              <a href="#" class="bikes-header__link">Шоссе</a>
+            </li>
+            <li class="bikes-header__item">
+              <a href="#" class="bikes-header__link">Грэвел</a>
+            </li>
+            <li class="bikes-header__item">
+              <a href="#" class="bikes-header__link">TT</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="bikes-cards">
+          <li class="bikes-cards__item">
+            <img src="./images/Cervelo Caledonia-5.png" alt="велосипед Cervelo Caledonia-5" class="bikes-cards__image">
+            <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank" class="bikes-cards__link">Cervelo Caledonia-5</a>
+          </li>
+          <li class="bikes-cards__item">
+            <img src="./images/Cannondale Systemsix Himod.png" alt="велосипед Cannondale Systemsix Himod" class="bikes-cards__image">
+            <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank" class="bikes-cards__link">Cannondale Systemsix Himod</a>
+          </li>
+          <li class="bikes-cards__item">
+            <img src="./images/Cervelo Caledonia-5.png" alt="велосипед Trek Domane SL-7" class="bikes-cards__image">
+            <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes-cards__link">Trek Domane SL-7</a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="training">
+        <div class="training__wrapper">
+          <div class="paragraph">
+            <h2 class="paragraph__title">Тренировки</h2>
+            <p class="paragraph__text">Триатлонные старты, горные серпантины или грейвел&nbsp;заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно&nbsp;только определиться с&nbsp;выбором велосипеда&nbsp;и&nbsp;отправиться в&nbsp;путь.</p>
+          </div>
+          <div class="training-apps">
+            <ul class="trainig-apps__list">
+              <li class="trainig-apps__item">
+                <a href="https://www.strava.com" target="_blank" class="trainig-apps__link">Strava</a>
+              </li>
+              <li class="trainig-apps__item">
+                <a href="https://www.komoot.com" target="_blank" class="trainig-apps__link">Komoot</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="training__image-wrapper">
+          <img src="./images/road.jpg" alt="асфальтированная дорога" class="training__image">
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <form action="#" class="subscribe" name="mailing-list">
+        <h2 class="subscribe__heading">Подпишитесь&nbsp;на рассылку&nbsp;&mdash;</h2>
+        <input type="email" placeholder="Ваш e-mail" name="user-mail" class="form__input">
+      </form>
+      <div class="footer-wrapper">
+        <p class="footer__copyright">&copy; Road Club 2021</p>
+        <div class="theme-thumbler">
+          <div class="theme-thumbler__wrapper">
+            <div class="theme-thumbler__thumbler"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

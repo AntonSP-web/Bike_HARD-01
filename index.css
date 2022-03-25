@@ -457,8 +457,8 @@ template {
 }
 
 .routes__image {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -609,8 +609,8 @@ template {
 
 .quote__image {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .quote__text {
