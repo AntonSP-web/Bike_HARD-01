@@ -1,0 +1,6 @@
+.bikes__cards {
+  @include flex(space-between);
+  margin: 0;
+  padding: 120px 0 0;
+  list-style-type: none;
+}

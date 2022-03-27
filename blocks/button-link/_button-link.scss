@@ -10,4 +10,23 @@
   width: 180px;
   letter-spacing: 1px;
   cursor: url(./images/cursor.svg), auto;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 50px;
+    background: #319e75;
+    border-radius: 4px;
+    transition: all 1s ease;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 }

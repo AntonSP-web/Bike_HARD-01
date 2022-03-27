@@ -1,0 +1,10 @@
+.theme-tumbler__wrapper {
+  @include flex(flex-start, center);
+  height: 24px;
+  width: 44px;
+  background: $btnColor;
+  border-radius: 12px;
+  margin: 0 20px;
+  padding: 0 2px;
+  box-sizing: border-box;
+}

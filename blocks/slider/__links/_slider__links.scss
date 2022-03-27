@@ -1,0 +1,4 @@
+.slider__links {
+  @include flex(space-between);
+  max-width: 120px;
+}

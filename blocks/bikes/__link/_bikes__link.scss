@@ -1,0 +1,12 @@
+.bikes__link {
+  @include fonts($paragraph-fontSize, 28px, 400);
+  opacity: .7;
+  text-decoration: none;
+  color: $paragraph-fontColor;
+  cursor: url(./images/cursor.svg), auto;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .6;
+  }
+}

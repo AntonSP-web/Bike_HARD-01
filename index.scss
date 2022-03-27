@@ -39,3 +39,48 @@
 @import './blocks/quote/__text/quote__text';
 @import './blocks/quote/__name/quote__name';
 @import './blocks/quote/__title/quote__title';
+
+@import './blocks/slider/slider';
+@import './blocks/slider/__links/slider__links';
+@import './blocks/slider/__arrow/slider__arrow';
+@import './blocks/slider/__arrow/_type/slider__arrow_type_left';
+@import './blocks/slider/__arrow/_type/slider__arrow_type_right';
+@import './blocks/slider/__cards/slider__cards';
+@import './blocks/slider/__card/slider__card';
+
+@import './blocks/slider/__rectangle/slider__rectangle';
+
+@import './blocks/training/training';
+@import './blocks/training/__wrapper/training__wrapper';
+@import './blocks/training/__image-wrapper/training__image-wrapper';
+@import './blocks/training/__image/training__image';
+
+@import './blocks/training-apps/__list/training-apps__list';
+@import './blocks/training-apps/__item/training-apps__item';
+@import './blocks/training-apps/__link/training-apps__link';
+
+@import './blocks/bikes/bikes';
+@import './blocks/bikes/__header/bikes__header';
+@import './blocks/bikes/__heading/bikes__heading';
+@import './blocks/bikes/__list/bikes__list';
+@import './blocks/bikes/__item/bikes__item';
+@import './blocks/bikes/__link/bikes__link';
+@import './blocks/bikes/__link/_type/bikes__link_type_active';
+@import './blocks/bikes/__cards/bikes__cards';
+@import './blocks/bikes/__cards-item/bikes__cards-item';
+@import './blocks/bikes/__cards-image/bikes__cards-image';
+@import './blocks/bikes/__cards-link/bikes__cards-link';
+
+@import './blocks/footer/footer';
+@import './blocks/footer/__wrapper/footer__wrapper';
+@import './blocks/footer/__copyright/footer__copyright';
+
+@import './blocks/form-subscribe/__heading/form-subscribe__heading';
+@import './blocks/form-subscribe/__input/form-subscribe__input';
+
+@import './blocks/theme-tumbler/theme__tumbler';
+@import './blocks/theme-tumbler/__wrapper/theme-tumbler__wrapper';
+@import './blocks/theme-tumbler/__wrapper/_type/theme-tumbler__wrapper_type_night';
+@import './blocks/theme-tumbler/__day/theme-tumbler__day';
+@import './blocks/theme-tumbler/__night/theme-tumbler__night';
+@import './blocks/theme-tumbler/__tumbler/theme-tumbler__tumbler';

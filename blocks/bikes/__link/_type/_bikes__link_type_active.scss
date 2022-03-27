@@ -1,9 +1,9 @@
-.header__link {
-  @include fonts($linkFontSize, 18px, 500);
+.bikes__link_type_active {
+  @include fonts($paragraph-fontSize, 28px, 600);
+  opacity: 1;
   text-decoration: none;
   color: $base-fontColor;
   cursor: url(./images/cursor.svg), auto;
-  letter-spacing: .7px;
   transition: opacity .3s ease;
 
   &:hover {

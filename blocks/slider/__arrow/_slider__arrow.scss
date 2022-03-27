@@ -1,0 +1,13 @@
+.slider__arrow {
+  @include flex(center, center);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: url(./images/cursor.svg), auto;
+  background: $arrowBtnColor;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .6;
+  }
+}

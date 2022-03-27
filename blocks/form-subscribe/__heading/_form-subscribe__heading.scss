@@ -1,0 +1,6 @@
+.form-subscribe__heading {
+  @include fonts($formHeadingFontSize, 24px, 600);
+  color: $base-fontColor;
+  margin: 0;
+  max-width: 330px;
+}

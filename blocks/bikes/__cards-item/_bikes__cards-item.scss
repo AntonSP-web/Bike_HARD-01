@@ -1,0 +1,4 @@
+.bikes__cards-item {
+  @include flex($direction: column);
+  max-width: 380px;
+}

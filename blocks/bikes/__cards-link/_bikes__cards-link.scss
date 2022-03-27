@@ -1,9 +1,9 @@
-.header__link {
-  @include fonts($linkFontSize, 18px, 500);
+.bikes__cards-link {
+  @include fonts($paragraph-fontColor, 22px, 600);
   text-decoration: none;
   color: $base-fontColor;
+  margin-top: 22px;
   cursor: url(./images/cursor.svg), auto;
-  letter-spacing: .7px;
   transition: opacity .3s ease;
 
   &:hover {
