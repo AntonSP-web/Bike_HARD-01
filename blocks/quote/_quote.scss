@@ -1,4 +1,8 @@
 .quote {
   @include flex(space-between);
   padding: 120px 120px 60px 0;
+
+  @media (max-width: $bigScreen) {
+    padding-right: 60px;
+  }
 }

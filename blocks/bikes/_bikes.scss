@@ -1,3 +1,7 @@
 .bikes {
   padding: 60px 120px 60px 0;
+
+  @media (max-width: $bigScreen) {
+    padding-right: 60px;
+  }
 }
