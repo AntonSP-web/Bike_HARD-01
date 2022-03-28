@@ -960,6 +960,10 @@ template {
   list-style-type: none;
 }
 
+.bikes__cards_disabled {
+  display: none;
+}
+
 .bikes__cards-item {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -46,3 +46,29 @@ input.onblur = function() {
 input.onfocus = function() {
   inputOk.classList.remove('form-subscribe__submit_type_disabled');
 };
+
+const bikes = document.querySelector('.bikes');
+const highwayLinks = bikes.querySelectorAll('.bikes__link');
+const bikeCards = bikes.querySelectorAll('.bikes__cards');
+
+
+highwayLinks.forEach(link => {
+  link.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    for(let i = 0; i < highwayLinks.length; i++) {
+      if(highwayLinks[i] === evt.target) {
+        let attr = evt.target.getAttribute('data-type');
+        evt.target.classList.add('bikes__link_type_active');
+        for(let j = 0; j < bikeCards.length; j++) {
+          if(bikeCards[j].getAttribute('data-type') === attr) {
+            bikeCards[j].classList.remove('bikes__cards_disabled');
+          } else {
+            bikeCards[j].classList.add('bikes__cards_disabled');
+          }
+        }
+      } else {
+        highwayLinks[i].classList.remove('bikes__link_type_active');
+      }
+    }
+  })
+})

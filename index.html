@@ -15,9 +15,9 @@
     <header class="header">
       <nav class="header__navigation">
         <ul class="header__list">
-          <li class="header__item"><a href="#" class="header__link">Покрытия и градиенты</a></li>
-          <li class="header__item"><a href="#" class="header__link">Велосипеды</a></li>
-          <li class="header__item"><a href="#" class="header__link">Тренировки</a></li>
+          <li class="header__item"><a href="#slider" class="header__link">Покрытия и градиенты</a></li>
+          <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
+          <li class="header__item"><a href="#training" class="header__link">Тренировки</a></li>
         </ul>
       </nav>
     </header>
@@ -61,7 +61,7 @@
         </div>
       </section>
 
-      <section class="slider">
+      <section class="slider" id="slider">
         <div class="paragraph">
           <h2 class="paragraph__title">Шоссе</h2>
           <p class="paragraph__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
@@ -79,39 +79,69 @@
         </div>
       </section>
 
-      <section class="bikes">
+      <section class="bikes" id="bikes">
         <div class="bikes__header">
           <h2 class="bikes__heading">Велосипеды</h2>
           <ul class="bikes__list">
             <li class="bikes__item">
-              <a href="#" class="bikes__link bikes__link_type_active">Шоссе</a>
+              <a href="#" class="bikes__link bikes__link_type_active" data-type="highway">Шоссе</a>
             </li>
             <li class="bikes__item">
-              <a href="#" class="bikes__link">Грэвел</a>
+              <a href="#" class="bikes__link" data-type="gravel">Грэвел</a>
             </li>
             <li class="bikes__item">
-              <a href="#" class="bikes__link">TT</a>
+              <a href="#" class="bikes__link" data-type="TT">TT</a>
             </li>
           </ul>
         </div>
 
-        <ul class="bikes__cards">
+        <ul class="bikes__cards bikes__cards_type_highway" data-type="highway">
           <li class="bikes__cards-item">
-            <img src="./images/Cervelo Caledonia-5.png" alt="велосипед Cervelo Caledonia-5" class="bikes__cards-image">
+            <img src="./images/highway/Cervelo Caledonia-5.png" alt="велосипед Cervelo Caledonia-5" class="bikes__cards-image">
             <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank" class="bikes__cards-link">Cervelo Caledonia-5</a>
           </li>
           <li class="bikes__cards-item">
-            <img src="./images/Cannondale Systemsix Himod.png" alt="велосипед Cannondale Systemsix Himod" class="bikes__cards-image">
+            <img src="./images/highway/Cannondale Systemsix Himod.png" alt="велосипед Cannondale Systemsix Himod" class="bikes__cards-image">
             <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank" class="bikes__cards-link">Cannondale Systemsix Himod</a>
           </li>
           <li class="bikes__cards-item">
-            <img src="./images/Cervelo Caledonia-5.png" alt="велосипед Trek Domane SL-7" class="bikes__cards-image">
+            <img src="./images/highway/Trek Domane SL-7.png" alt="велосипед Trek Domane SL-7" class="bikes__cards-image">
             <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes__cards-link">Trek Domane SL-7</a>
+          </li>
+        </ul>
+
+        <ul class="bikes__cards bikes__cards_type_gravel bikes__cards_disabled" data-type="gravel">
+          <li class="bikes__cards-item">
+            <img src="./images/gravel/Cervelo Aspero GRX 810.png" alt="велосипед Cervelo Aspero GRX 810" class="bikes__cards-image">
+            <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank" class="bikes__cards-link">Cervelo Aspero GRX 810</a>
+          </li>
+          <li class="bikes__cards-item">
+            <img src="./images/gravel/Specialized S-Works Diverge.png" alt="велосипед Specialized S-Works Diverge" class="bikes__cards-image">
+            <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank" class="bikes__cards-link">Specialized S-Works Diverge</a>
+          </li>
+          <li class="bikes__cards-item">
+            <img src="./images/gravel/Cannondale Topstone Lefty 3.png" alt="велосипед Cannondale Topstone Lefty 3" class="bikes__cards-image">
+            <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes__cards-link">Cannondale Topstone Lefty 3</a>
+          </li>
+        </ul>
+
+        <ul class="bikes__cards bikes__cards_type_TT bikes__cards_disabled" data-type="TT">
+          <li class="bikes__cards-item">
+            <img src="./images/TT/Specialized S-Works Shiv.png" alt="велосипед Specialized S-Works Shiv" class="bikes__cards-image">
+            <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank" class="bikes__cards-link">Specialized S-Works Shiv</a>
+          </li>
+          <li class="bikes__cards-item">
+            <img src="./images/TT/BMC Timemachine 01 ONE.png" alt="велосипед BMC Timemachine 01 ONE" class="bikes__cards-image">
+            <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank" class="bikes__cards-link">BMC Timemachine 01 ONE</a>
+          </li>
+          <li class="bikes__cards-item">
+            <img src="./images//TT/Cervelo P-Series.png" alt="велосипед Cervelo P-Series" class="bikes__cards-image">
+            <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes__cards-link">Cervelo P-Series</a>
           </li>
         </ul>
       </section>
 
-      <section class="training">
+      <section class="training" id="training">
         <div class="training__wrapper">
           <div class="paragraph">
             <h2 class="paragraph__title">Тренировки</h2>
