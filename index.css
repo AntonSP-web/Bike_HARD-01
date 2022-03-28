@@ -386,6 +386,12 @@ template {
   opacity: .9;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    padding: 28px 60px;
+  }
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,6 +433,12 @@ template {
 
 .main {
   padding-left: 120px;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding-left: 60px;
+  }
 }
 
 .routes {
@@ -530,8 +542,8 @@ template {
   height: 50px;
   background: #319e75;
   border-radius: 4px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
   z-index: -1;
 }
 
@@ -979,6 +991,13 @@ template {
   background-color: #efefef;
 }
 
+@media (max-width: 1200px) {
+  .footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,6 +1028,31 @@ template {
   color: #151515;
   margin: 0;
   max-width: 330px;
+}
+
+.form-subscribe__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  max-width: 360px;
+  width: 100%;
+  height: 50px;
+  margin: 50px 0 90px;
+  padding: 12px 20px;
 }
 
 .form-subscribe__input {
@@ -1097,6 +1141,22 @@ template {
 
 .form-subscribe__input:focus::placeholder {
   color: transparent;
+}
+
+.form-subscribe__submit {
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #151515;
+  padding: 0;
+  margin: 0;
+  cursor: url(./images/cursor.svg), auto;
+}
+
+.form-subscribe__submit_type_disabled {
+  visibility: hidden;
 }
 
 .theme-tumbler {
