@@ -23,3 +23,26 @@ tumbler.addEventListener('click', (evt) => {
     page.style.backgroundColor = '#333';
   }
 })
+
+const input = page.querySelector('.form-subscribe__input');
+const inputOk = page.querySelector('.form-subscribe__submit');
+const form = page.querySelector('.form-subscribe');
+
+// form.addEventListener("focusin", () => inputOk.classList.remove('form-subscribe__submit_type_disabled'));
+
+// form.addEventListener("focusout", () =>  inputOk.classList.add('form-subscribe__submit_type_disabled'));
+
+input.onblur = function() {
+  if (input.value.includes('@')) {
+    input.value = 'Круто!';
+    inputOk.classList.add('form-subscribe__submit_type_disabled');
+  } else {
+    form.addEventListener("focusout", () => {
+      inputOk.classList.add('form-subscribe__submit_type_disabled');
+    });
+  }
+};
+
+input.onfocus = function() {
+  inputOk.classList.remove('form-subscribe__submit_type_disabled');
+};

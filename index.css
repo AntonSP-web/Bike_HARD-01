@@ -1026,6 +1026,10 @@ template {
   cursor: url(./images/cursor.svg), auto;
 }
 
+.form-subscribe__input:focus {
+  cursor: text;
+}
+
 .form-subscribe__input::-webkit-input-placeholder {
   font-weight: 500;
   font-size: 14px;
