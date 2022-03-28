@@ -1,4 +1,9 @@
 .footer {
   padding: 80px 120px 60px;
   background-color: $footerBackgroundColor;
+
+  @media (max-width: $bigScreen) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
