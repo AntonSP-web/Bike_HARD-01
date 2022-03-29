@@ -2,4 +2,8 @@
   width: 132px;
   height: 2px;
   background: $lineColor;
+
+  @media (max-width: $notebooks) {
+    width: 80px;
+  }
 }

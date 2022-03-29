@@ -1,3 +1,7 @@
 .routes__button-link {
   margin: 50px 0 168px;
+
+  @media (max-width: $notebooks) {
+    margin-bottom: 120px;
+  }
 }

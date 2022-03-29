@@ -3,4 +3,12 @@
   top: 348px;
   right: 25%;
   height: 430px;
+
+  @media (max-width: $notebooks) {
+    right: 15%;
+  }
+
+  @media (max-width: $smallNotebooks) {
+    top: 300px;
+  }
 }

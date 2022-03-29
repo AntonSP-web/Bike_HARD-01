@@ -20,16 +20,22 @@
           <li class="header__item"><a href="#training" class="header__link">Тренировки</a></li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <input id="menu-toggle" type="checkbox" class="hamburger__toogle"/>
+        <label class="hamburger__button" for="menu-toggle">
+          <span class="hamburger__line"></span>
+        </label>
+      </div>
     </header>
 
     <main class="main">
       <section class="routes">
         <div class="routes__description">
           <div class="paragraph">
-            <h2 class="paragraph__title">Шоссе, ТТ и&nbsp;Грэвел</h2>
+            <h1 class="paragraph__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
             <p class="paragraph__text">Триатлонные старты, горные серпантины или грейвел&nbsp;заезды по&nbsp;живописным маршрутам&nbsp;&mdash; нужно&nbsp;только определиться с&nbsp;выбором велосипеда&nbsp;и&nbsp;отправиться в&nbsp;путь.</p>
           </div>
-          <a href="#" class="button-link routes__button-link">Подробнее</a>
+          <a href="#slider" class="button-link routes__button-link">Подробнее</a>
           <div class="bike-type">
             <p class="bike-type__name">Cannondale Systemsix</p>
             <div class="bike-type__line"></div>
@@ -64,7 +70,7 @@
       <section class="slider" id="slider">
         <div class="paragraph">
           <h2 class="paragraph__title">Шоссе</h2>
-          <p class="paragraph__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
+          <p class="paragraph__text">На&nbsp;шоссейном велосипеде можно ездить по асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
         </div>
 
         <div class="paragraph paragraph_disabled">
@@ -80,6 +86,16 @@
         <div class="slider__cards">
           <img src="./images/mountain_highway.jpg" alt="шоссе в горах" class="slider__card">
           <img src="./images/forest_biking.jpg" alt="катание на велосипеде в лесу" class="slider__card">
+          <div class="slider__rectangle"></div>
+        </div>
+        <div class="slider__cards slider__cards_disabled">
+          <img src="./images/forest_biking.jpg" alt="катание на велосипеде в лесу" class="slider__card">
+          <img src="./images/country-road.jpg" alt="загородная дорога" class="slider__card">
+          <div class="slider__rectangle"></div>
+        </div>
+        <div class="slider__cards slider__cards_disabled">
+          <img src="./images/country-road.jpg" alt="загородная дорога" class="slider__card">
+          <img src="./images/mountain_highway.jpg" alt="шоссе в горах" class="slider__card">
           <div class="slider__rectangle"></div>
         </div>
 

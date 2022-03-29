@@ -369,6 +369,10 @@ template {
   src: url(./vendor/fonts/Inter/Inter-Bold.woff2) format("woff2"), url(./vendor/fonts/Inter/Inter-Bold.woff) format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
   max-width: 1440px;
   background-color: #f4f4f4;
@@ -466,6 +470,12 @@ template {
   margin: 50px 0 168px;
 }
 
+@media (max-width: 1024px) {
+  .routes__button-link {
+    margin-bottom: 120px;
+  }
+}
+
 .routes__image-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,6 +507,16 @@ template {
   letter-spacing: -.5px;
 }
 
+@media (max-width: 868px) {
+  .paragraph__title {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+}
+
 .paragraph__text {
   font-size: 18px;
   line-height: 28px;
@@ -504,6 +524,14 @@ template {
   margin: 0;
   color: #222;
   opacity: .7;
+}
+
+@media (max-width: 868px) {
+  .paragraph__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+  }
 }
 
 .button-link {
@@ -578,10 +606,22 @@ template {
   margin: 0 30px 0 0;
 }
 
+@media (max-width: 1024px) {
+  .bike-type__name {
+    margin-right: 10px;
+  }
+}
+
 .bike-type__line {
   width: 132px;
   height: 2px;
   background: #d7d4d4;
+}
+
+@media (max-width: 1024px) {
+  .bike-type__line {
+    width: 80px;
+  }
 }
 
 .position-wrapper {
@@ -589,6 +629,18 @@ template {
   top: 348px;
   right: 25%;
   height: 430px;
+}
+
+@media (max-width: 1024px) {
+  .position-wrapper {
+    right: 15%;
+  }
+}
+
+@media (max-width: 868px) {
+  .position-wrapper {
+    top: 300px;
+  }
 }
 
 .bike-sticky {
@@ -605,6 +657,16 @@ template {
   padding: 20px 50px;
   -webkit-filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 868px) {
+  .bike-sticky {
+    top: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 360px;
+    padding: 20px 25px;
+  }
 }
 
 .quote {
@@ -754,6 +816,10 @@ template {
   display: flex;
   overflow: hidden;
   position: relative;
+}
+
+.slider__cards_disabled {
+  display: none;
 }
 
 .slider__card {

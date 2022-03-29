@@ -3,4 +3,8 @@
   margin: 0;
   color: $paragraph-fontColor;
   opacity: .7;
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(16px, 26px, normal);
+  }
 }

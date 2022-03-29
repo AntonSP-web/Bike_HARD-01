@@ -78,26 +78,28 @@ const leftArrow = sliderSection.querySelector('.slider__arrow_type_left');
 const rightArrow = sliderSection.querySelector('.slider__arrow_type_right');
 const paragraphs = sliderSection.querySelectorAll('.paragraph');
 const sliderLinks = sliderSection.querySelector('.slider__links');
-console.log(paragraphs);
-
+const sliderCards = sliderSection.querySelectorAll('.slider__cards');
 let counter = 0;
 
-rightArrow.addEventListener('click', (evt) => {
+sliderLinks.addEventListener('click', (evt) => {
     evt.preventDefault();
-    for(let i = 0; i < paragraphs.length; i++){
-      if(paragraphs[i] === paragraphs[counter + 1]) {
-        paragraphs[counter + 1].classList.remove('paragraph_disabled');
-      } else {
-        paragraphs[i].classList.add('paragraph_disabled');
+    if(evt.target === rightArrow) {
+      for(let i = 0; i < paragraphs.length; i++){
+        if(paragraphs[i] === paragraphs[counter + 1]) {
+          paragraphs[counter + 1].classList.remove('paragraph_disabled');
+          sliderCards[counter + 1].classList.remove('slider__cards_disabled');
+        } else {
+          paragraphs[i].classList.add('paragraph_disabled');
+          sliderCards[i].classList.add('slider__cards_disabled');
+        }
       }
-
+      counter++;
+      if(counter > 2) {
+        counter = 0;
+        paragraphs[counter].classList.remove('paragraph_disabled');
+        sliderCards[counter].classList.remove('slider__cards_disabled');
+      }
     }
-    counter += 1;
-    if(counter > 2) {
-      counter = 0;
-      paragraphs[counter].classList.remove('paragraph_disabled');
-    }
-    console.log(counter)
   }
 )
 
