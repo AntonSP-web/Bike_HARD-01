@@ -484,6 +484,10 @@ template {
   max-width: 460px;
 }
 
+.paragraph_disabled {
+  display: none;
+}
+
 .paragraph__title {
   font-size: 55px;
   line-height: 60px;

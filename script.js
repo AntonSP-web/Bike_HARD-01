@@ -47,7 +47,7 @@ input.onfocus = function() {
   inputOk.classList.remove('form-subscribe__submit_type_disabled');
 };
 
-const bikes = document.querySelector('.bikes');
+const bikes = page.querySelector('.bikes');
 const highwayLinks = bikes.querySelectorAll('.bikes__link');
 const bikeCards = bikes.querySelectorAll('.bikes__cards');
 
@@ -72,3 +72,32 @@ highwayLinks.forEach(link => {
     }
   })
 })
+
+const sliderSection = page.querySelector('.slider');
+const leftArrow = sliderSection.querySelector('.slider__arrow_type_left');
+const rightArrow = sliderSection.querySelector('.slider__arrow_type_right');
+const paragraphs = sliderSection.querySelectorAll('.paragraph');
+const sliderLinks = sliderSection.querySelector('.slider__links');
+console.log(paragraphs);
+
+let counter = 0;
+
+rightArrow.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    for(let i = 0; i < paragraphs.length; i++){
+      if(paragraphs[i] === paragraphs[counter + 1]) {
+        paragraphs[counter + 1].classList.remove('paragraph_disabled');
+      } else {
+        paragraphs[i].classList.add('paragraph_disabled');
+      }
+
+    }
+    counter += 1;
+    if(counter > 2) {
+      counter = 0;
+      paragraphs[counter].classList.remove('paragraph_disabled');
+    }
+    console.log(counter)
+  }
+)
+
