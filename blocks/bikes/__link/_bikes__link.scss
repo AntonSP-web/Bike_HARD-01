@@ -9,4 +9,9 @@
   &:hover {
     opacity: .6;
   }
+
+  @media (max-width: $tablets) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

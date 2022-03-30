@@ -8,4 +8,10 @@
     @include fonts(45px, 50px, 700);
     margin-bottom: 35px;
   }
+
+  @media (max-width: $tablets) {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
 }

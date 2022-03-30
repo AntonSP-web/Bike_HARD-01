@@ -11,4 +11,8 @@
     padding-top: 60px;
     padding-bottom: 40px;
   }
+
+  @media (max-width: $tablets) {
+    padding: 30px;
+  }
 }

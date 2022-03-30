@@ -11,4 +11,8 @@
   @media (max-width: $smallNotebooks) {
     @include fonts(14px, 24px, 500);
   }
+
+  @media (max-width: $tablets) {
+    font-size: 12px;
+  }
 }

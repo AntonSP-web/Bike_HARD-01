@@ -5,4 +5,9 @@
   @media (max-width: $bigScreen) {
     padding-right: 60px;
   }
+
+  @media (max-width: $tablets) {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
 }

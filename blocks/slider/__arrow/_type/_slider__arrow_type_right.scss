@@ -1,5 +1,7 @@
 .slider__arrow_type_right::before {
-  content: url(./images/arrow-right.svg);
+  content: '';
+  background: url(./images/arrow-right.svg) no-repeat;
   width: 10px;
-  height: 16px;
+  height: 18px;
+  background-size: 10px;
 }

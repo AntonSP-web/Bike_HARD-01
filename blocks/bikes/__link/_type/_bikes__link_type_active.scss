@@ -1,5 +1,5 @@
 .bikes__link_type_active {
-  @include fonts($paragraph-fontSize, 28px, 600);
+  font-weight: 600;
   opacity: 1;
   text-decoration: none;
   color: $base-fontColor;

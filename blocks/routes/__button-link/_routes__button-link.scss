@@ -4,4 +4,8 @@
   @media (max-width: $notebooks) {
     margin-bottom: 120px;
   }
+
+  @media (max-width: $tablets) {
+    margin-bottom: 90px;
+  }
 }

@@ -1,4 +1,8 @@
 .slider__links {
   @include flex(space-between);
   max-width: 120px;
+
+  @media (max-width: $tablets) {
+    max-width: 100px;
+  }
 }

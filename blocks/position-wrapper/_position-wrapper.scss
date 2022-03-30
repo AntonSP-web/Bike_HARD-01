@@ -10,5 +10,10 @@
 
   @media (max-width: $smallNotebooks) {
     top: 300px;
+    right: 10%;
+  }
+
+  @media (max-width: $tablets) {
+    top: 200px;
   }
 }

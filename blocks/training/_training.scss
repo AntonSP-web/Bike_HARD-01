@@ -10,4 +10,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media (max-width: $tablets) {
+    padding: 30px 30px 30px 0;
+  }
 }
