@@ -103,3 +103,13 @@ sliderLinks.addEventListener('click', (evt) => {
   }
 )
 
+const hamburgerToggle = page.querySelector('.hamburger__toggle');
+const headerMobile = page.querySelector('.header__list_type_mobile');
+const menuLinks = headerMobile.querySelectorAll('.header__link');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburgerToggle.checked = false;
+  })
+})
+

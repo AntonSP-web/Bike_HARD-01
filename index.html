@@ -14,18 +14,23 @@
   <div class="page">
     <header class="header">
       <nav class="header__navigation">
-        <ul class="header__list">
+        <ul class="header__list header__list_type_desktop">
           <li class="header__item"><a href="#slider" class="header__link">Покрытия и градиенты</a></li>
           <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
           <li class="header__item"><a href="#training" class="header__link">Тренировки</a></li>
         </ul>
+        <div class="hamburger">
+          <input id="menu-toggle" type="checkbox" class="hamburger__toggle">
+          <label class="hamburger__button" for="menu-toggle">
+            <span class="hamburger__line"></span>
+          </label>
+          <ul class="header__list header__list_type_mobile">
+            <li class="header__item"><a href="#slider" class="header__link">Покрытия и градиенты</a></li>
+            <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
+            <li class="header__item"><a href="#training" class="header__link">Тренировки</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="hamburger">
-        <input id="menu-toggle" type="checkbox" class="hamburger__toogle"/>
-        <label class="hamburger__button" for="menu-toggle">
-          <span class="hamburger__line"></span>
-        </label>
-      </div>
     </header>
 
     <main class="main">
