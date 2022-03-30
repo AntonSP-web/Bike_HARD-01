@@ -4,5 +4,10 @@
   &:first-child {
     margin-left: 0;
   }
+
+  @media (max-width: $smallTablets) {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
 }
 

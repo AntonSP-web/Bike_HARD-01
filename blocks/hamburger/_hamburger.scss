@@ -1,0 +1,7 @@
+.hamburger {
+  display: none;
+
+  @media (max-width: $smallTablets) {
+    display: block;
+  }
+}

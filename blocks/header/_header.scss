@@ -14,4 +14,9 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (max-width: $smallTablets) {
+    height: 74px;
+    box-sizing: border-box;
+  }
 }
