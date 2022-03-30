@@ -3,4 +3,8 @@
   margin: 0;
   letter-spacing: -0.5px;
   color: $base-fontColor;
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(45px, 50px, 700);
+  }
 }

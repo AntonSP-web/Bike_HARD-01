@@ -3,4 +3,8 @@
   margin-right: 40px;
   max-width: 650px;
   width: 100%;
+
+  @media (max-width: $smallNotebooks) {
+    height: 300px;
+  }
 }

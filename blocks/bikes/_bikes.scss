@@ -4,4 +4,8 @@
   @media (max-width: $bigScreen) {
     padding-right: 60px;
   }
+
+  @media (max-width: $smallNotebooks) {
+    padding-top: 30px;
+  }
 }

@@ -3,4 +3,8 @@
   display: flex;
   overflow: hidden;
   position: relative;
+
+  @media (max-width: $smallNotebooks) {
+    margin: 60px 0 40px;
+  }
 }

@@ -3,4 +3,12 @@
   letter-spacing: -0.5px;
   margin: 0;
   color: $base-fontColor;
+
+  @media (max-width: $notebooks) {
+    @include fonts(30px, 40px, 600);
+  }
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(24px, 34px, 600);
+  }
 }

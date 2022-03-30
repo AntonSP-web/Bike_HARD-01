@@ -1,3 +1,8 @@
 .slider {
   padding: 60px 0;
+
+  @media (max-width: $smallNotebooks) {
+    padding-bottom: 30px;
+  }
 }
+

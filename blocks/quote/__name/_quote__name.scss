@@ -2,4 +2,12 @@
   @include fonts($quote-nameFontSize, 32px, 500);
   color: $base-fontColor;
   margin: 0;
+
+  @media (max-width: $notebooks) {
+    @include fonts(18px, 28px, 500);
+  }
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(16px, 26px, 500);
+  }
 }
