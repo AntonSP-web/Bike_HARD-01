@@ -12,4 +12,8 @@
   @media (max-width: $tablets) {
     margin: 40px 0 60px;
   }
+
+  @media (max-width: $smallTablets) {
+    max-width: 100%;
+  }
 }

@@ -91,6 +91,7 @@
 @import './blocks/footer/footer';
 @import './blocks/footer/__wrapper/footer__wrapper';
 @import './blocks/footer/__copyright/footer__copyright';
+@import './blocks/footer/__logo/footer__logo';
 
 @import './blocks/form-subscribe/__heading/form-subscribe__heading';
 @import './blocks/form-subscribe/__input-wrapper/form-subscribe__input-wrapper';
@@ -99,6 +100,7 @@
 @import './blocks/form-subscribe/__submit/_type/form-subscribe__submit_type_disabled';
 
 @import './blocks/theme-tumbler/theme__tumbler';
+@import './blocks/theme-tumbler/_place/theme-tumbler_place_footer';
 @import './blocks/theme-tumbler/__wrapper/theme-tumbler__wrapper';
 @import './blocks/theme-tumbler/__wrapper/_type/theme-tumbler__wrapper_type_night';
 @import './blocks/theme-tumbler/__day/theme-tumbler__day';
