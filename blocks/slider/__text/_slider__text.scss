@@ -1,4 +1,4 @@
-.paragraph__text {
+.slider__text {
   @include fonts($paragraph-fontSize, 28px, normal);
   margin: 0;
   max-width: 460px;
@@ -12,5 +12,10 @@
   @media (max-width: $tablets) {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  @media (max-width: $smallTablets) {
+    grid-row: 3/4;
+    grid-column: 1/3;
   }
 }

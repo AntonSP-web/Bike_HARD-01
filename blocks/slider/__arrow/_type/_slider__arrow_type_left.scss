@@ -4,6 +4,12 @@
   width: 12px;
   height: 18px;
   background-size: 10px;
+
+  @media (max-width: $smallTablets) {
+    width: 10px;
+    height: 14px;
+    background-size: 8px;
+  }
 }
 
 

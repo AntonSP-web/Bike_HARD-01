@@ -51,6 +51,9 @@
 @import './blocks/quote/__title/quote__title';
 
 @import './blocks/slider/slider';
+@import './blocks/slider/__item/slider__item';
+@import './blocks/slider/__title/slider__title';
+@import './blocks/slider/__text/slider__text';
 @import './blocks/slider/__links/slider__links';
 @import './blocks/slider/__arrow/slider__arrow';
 @import './blocks/slider/__arrow/_type/slider__arrow_type_left';
@@ -62,6 +65,8 @@
 @import './blocks/slider/__rectangle/slider__rectangle';
 
 @import './blocks/training/training';
+@import './blocks/training/__title/training__title';
+@import './blocks/training/__text/training__text';
 @import './blocks/training/__wrapper/training__wrapper';
 @import './blocks/training/__image-wrapper/training__image-wrapper';
 @import './blocks/training/__image/training__image';

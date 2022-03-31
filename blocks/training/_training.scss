@@ -1,6 +1,10 @@
 .training {
   @include flex(space-between);
   padding: 150px 120px 120px 0;
+  display: grid;
+  grid-template-columns: minmax(50px, 460px) minmax(0, 580px);
+  grid-template-rows: min-content 1fr min-content;
+  grid-column-gap: 20px;
 
   @media (max-width: $bigScreen) {
     padding-right: 60px;
@@ -13,5 +17,7 @@
 
   @media (max-width: $tablets) {
     padding: 30px 30px 30px 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }

@@ -1,8 +1,9 @@
 .slider__links {
-  @include flex(space-between);
-  max-width: 120px;
+  @include flex();
 
-  @media (max-width: $tablets) {
-    max-width: 100px;
+  @media (max-width: $smallTablets) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: flex-end;
   }
 }
