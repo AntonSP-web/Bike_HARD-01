@@ -2,4 +2,9 @@
   @include flex(space-between, $direction: column);
   max-width: 470px;
   margin-left: 40px;
+
+  @media (max-width: $smallTablets) {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
