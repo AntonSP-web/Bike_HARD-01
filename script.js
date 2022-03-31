@@ -73,35 +73,35 @@ highwayLinks.forEach(link => {
   })
 })
 
-const sliderSection = page.querySelector('.slider');
-const leftArrow = sliderSection.querySelector('.slider__arrow_type_left');
-const rightArrow = sliderSection.querySelector('.slider__arrow_type_right');
-const paragraphs = sliderSection.querySelectorAll('.paragraph');
-const sliderLinks = sliderSection.querySelector('.slider__links');
-const sliderCards = sliderSection.querySelectorAll('.slider__cards');
-let counter = 0;
+// const sliderSection = page.querySelector('.slider');
+// const leftArrow = sliderSection.querySelector('.slider__arrow_type_left');
+// const rightArrow = sliderSection.querySelector('.slider__arrow_type_right');
+// const paragraphs = sliderSection.querySelectorAll('.paragraph');
+// const sliderLinks = sliderSection.querySelector('.slider__links');
+// const sliderCards = sliderSection.querySelectorAll('.slider__cards');
+// let counter = 0;
 
-sliderLinks.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    if(evt.target === rightArrow) {
-      for(let i = 0; i < paragraphs.length; i++){
-        if(paragraphs[i] === paragraphs[counter + 1]) {
-          paragraphs[counter + 1].classList.remove('paragraph_disabled');
-          sliderCards[counter + 1].classList.remove('slider__cards_disabled');
-        } else {
-          paragraphs[i].classList.add('paragraph_disabled');
-          sliderCards[i].classList.add('slider__cards_disabled');
-        }
-      }
-      counter++;
-      if(counter > 2) {
-        counter = 0;
-        paragraphs[counter].classList.remove('paragraph_disabled');
-        sliderCards[counter].classList.remove('slider__cards_disabled');
-      }
-    }
-  }
-)
+// sliderLinks.addEventListener('click', (evt) => {
+//     evt.preventDefault();
+//     if(evt.target === rightArrow) {
+//       for(let i = 0; i < paragraphs.length; i++){
+//         if(paragraphs[i] === paragraphs[counter + 1]) {
+//           paragraphs[counter + 1].classList.remove('paragraph_disabled');
+//           sliderCards[counter + 1].classList.remove('slider__cards_disabled');
+//         } else {
+//           paragraphs[i].classList.add('paragraph_disabled');
+//           sliderCards[i].classList.add('slider__cards_disabled');
+//         }
+//       }
+//       counter++;
+//       if(counter > 2) {
+//         counter = 0;
+//         paragraphs[counter].classList.remove('paragraph_disabled');
+//         sliderCards[counter].classList.remove('slider__cards_disabled');
+//       }
+//     }
+//   }
+// )
 
 const hamburgerToggle = page.querySelector('.hamburger__toggle');
 const headerMobile = page.querySelector('.header__list_type_mobile');
