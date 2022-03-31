@@ -24,16 +24,27 @@
           <label class="hamburger__button" for="menu-toggle">
             <span class="hamburger__line"></span>
           </label>
-          <ul class="header__list header__list_type_mobile">
-            <li class="header__item"><a href="#slider" class="header__link">Покрытия и градиенты</a></li>
-            <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
-            <li class="header__item"><a href="#training" class="header__link">Тренировки</a></li>
-          </ul>
+
+          <div class="hamburger__curtain">
+            <ul class="header__list header__list_type_mobile">
+              <li class="header__item"><a href="#slider" class="header__link">Покрытия и градиенты</a></li>
+              <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
+              <li class="header__item"><a href="#training" class="header__link">Тренировки</a></li>
+            </ul>
+
+            <div class="theme-tumbler theme-tumbler_place_header">
+              <div class="theme-tumbler__day"></div>
+              <div class="theme-tumbler__wrapper">
+                <div class="theme-tumbler__tumbler"></div>
+              </div>
+              <div class="theme-tumbler__night"></div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <section class="routes">
         <div class="routes__description">
           <div class="paragraph">
@@ -71,7 +82,6 @@
       </section>
 
       <section class="slider" id="slider">
-        <!-- <div class="paragraph"> -->
         <div class="slider__item">
           <h2 class="slider__title">Шоссе</h2>
           <p class="slider__text">На&nbsp;шоссейном велосипеде можно ездить по асфальту на&nbsp;разных градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно и&nbsp;самостоятельно.</p>
@@ -88,7 +98,7 @@
           </div>
         </div>
 
-        <!-- </div> -->
+
 
         <div class="paragraph paragraph_disabled">
           <h2 class="paragraph__title">Грэвел</h2>
@@ -111,10 +121,6 @@
           <div class="slider__rectangle"></div>
         </div>
 
-        <!-- <div class="slider__links">
-          <a href="#" class="slider__arrow slider__arrow_type_left"></a>
-          <a href="#" class="slider__arrow slider__arrow_type_right"></a>
-        </div> -->
       </section>
 
       <section class="bikes" id="bikes">
@@ -180,22 +186,16 @@
       </section>
 
       <section class="training" id="training">
-        <!-- <div class="training__wrapper"> -->
-          <!-- <div class="paragraph"> -->
-            <h2 class="training__title">Тренировки</h2>
-            <p class="training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
-          <!-- </div> -->
-          <!-- <div class="training-apps"> -->
-            <ul class="training-apps__list">
-              <li class="training-apps__item">
-                <a href="https://www.strava.com" target="_blank" class="training-apps__link">Strava</a>
-              </li>
-              <li class="training-apps__item">
-                <a href="https://www.komoot.com" target="_blank" class="training-apps__link">Komoot</a>
-              </li>
-            </ul>
-          <!-- </div> -->
-        <!-- </div> -->
+        <h2 class="training__title">Тренировки</h2>
+        <p class="training__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+        <ul class="training-apps__list">
+          <li class="training-apps__item">
+            <a href="https://www.strava.com" target="_blank" class="training-apps__link">Strava</a>
+          </li>
+          <li class="training-apps__item">
+            <a href="https://www.komoot.com" target="_blank" class="training-apps__link">Komoot</a>
+          </li>
+        </ul>
 
         <div class="training__image-wrapper">
           <img src="./images/road.jpg" alt="асфальтированная дорога" class="training__image">
@@ -213,13 +213,14 @@
       </form>
       <div class="footer__wrapper">
         <p class="footer__copyright">&copy; Road Club 2021</p>
-        <div class="theme-tumbler">
+        <div class="theme-tumbler theme-tumbler_place_footer">
           <div class="theme-tumbler__day"></div>
           <div class="theme-tumbler__wrapper">
             <div class="theme-tumbler__tumbler"></div>
           </div>
           <div class="theme-tumbler__night"></div>
         </div>
+        <a href="#main" class="footer__logo"></a>
       </div>
     </footer>
   </div>
