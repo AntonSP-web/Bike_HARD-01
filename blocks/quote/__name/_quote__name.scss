@@ -14,4 +14,8 @@
   @media (max-width: $tablets) {
     @include fonts(14px, 16px, 500);
   }
+
+  @media (max-width: $smallTablets) {
+    line-height: 22px;
+  }
 }
