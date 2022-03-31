@@ -1,5 +1,5 @@
 .training {
-  @include flex(space-between);
+  // @include flex(space-between);
   padding: 150px 120px 120px 0;
   display: grid;
   grid-template-columns: minmax(50px, 460px) minmax(0, 580px);

@@ -1,0 +1,5 @@
+.bike-type_disabled {
+  @media (max-width: $smallTablets) {
+    display: none;
+  }
+}

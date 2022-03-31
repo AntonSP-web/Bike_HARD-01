@@ -1,3 +1,6 @@
 .bike-type {
   @include flex($align: center);
+  align-self: flex-start;
+  grid-row: 4/5;
+  grid-column: 1/2;
 }
