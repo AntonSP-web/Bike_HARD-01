@@ -1,7 +1,15 @@
 .slider__arrow_type_left::before {
-  content: url(./images/arrow-left.svg);
-  width: 10px;
-  height: 16px;
+  content: '';
+  background: url(./images/arrow-left.svg) no-repeat;
+  width: 12px;
+  height: 18px;
+  background-size: 10px;
+
+  @media (max-width: $smallTablets) {
+    width: 10px;
+    height: 14px;
+    background-size: 8px;
+  }
 }
 
 

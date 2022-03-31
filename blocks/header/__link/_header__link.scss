@@ -9,4 +9,10 @@
   &:hover {
     opacity: .75;
   }
+
+  @media (max-width: $smallTablets) {
+    font-size: 18px;
+    text-align: center;
+    color: $base-fontColor;
+  }
 }

@@ -5,4 +5,8 @@
   @media (max-width: $notebooks) {
     margin-right: 10px;
   }
+
+  @media (max-width: 810px) {
+    font-size: 14px;
+  }
 }

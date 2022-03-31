@@ -9,4 +9,14 @@
   @media (max-width: $bigScreen) {
     padding: 28px 60px;
   }
+
+  @media (max-width: $tablets) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $smallTablets) {
+    height: 74px;
+    box-sizing: border-box;
+  }
 }

@@ -1,3 +1,7 @@
 .routes__description {
   padding-top: 80px;
+
+  @media (max-width: $tablets) {
+    padding-top: 40px;
+  }
 }

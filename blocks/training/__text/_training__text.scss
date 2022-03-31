@@ -1,6 +1,6 @@
-.paragraph__text {
+.training__text {
   @include fonts($paragraph-fontSize, 28px, normal);
-  margin: 0;
+  margin: 50px 0 0;
   max-width: 460px;
   color: $paragraph-fontColor;
   opacity: .7;
@@ -12,5 +12,11 @@
   @media (max-width: $tablets) {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  @media (max-width: $smallTablets) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin: 40px 0;
   }
 }

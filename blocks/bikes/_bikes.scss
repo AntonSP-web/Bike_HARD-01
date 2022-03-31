@@ -8,4 +8,9 @@
   @media (max-width: $smallNotebooks) {
     padding-top: 30px;
   }
+
+  @media (max-width: $tablets) {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
 }

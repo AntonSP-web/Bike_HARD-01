@@ -1,0 +1,6 @@
+.slider__item {
+  @media (max-width: $smallTablets) {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+  }
+}

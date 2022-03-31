@@ -1,5 +1,10 @@
 .training__image-wrapper {
-  display: flex;
-  max-width: 580px;
-  margin-left: 40px;
+  grid-row: 1/4;
+  grid-column: 2/3;
+  margin: 0;
+
+  @media (max-width: $smallTablets) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
 }
