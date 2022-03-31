@@ -2,4 +2,20 @@
   display: flex;
   max-width: 610px;
   margin: 20px 0 0 40px;
+  justify-self: end;
+  grid-row: 1/5;
+  grid-column: 2/3;
+
+  @media (max-width: $smallNotebooks) {
+    height: 90%;
+  }
+
+  @media (max-width: $tablets) {
+    height: 80%;
+  }
+
+  @media (max-width: $smallTablets) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
 }

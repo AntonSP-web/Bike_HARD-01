@@ -12,6 +12,7 @@
   cursor: url(./images/cursor.svg), auto;
   position: relative;
   z-index: 1;
+  height: 50px;
 
   &::before {
     content:'';

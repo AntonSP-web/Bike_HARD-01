@@ -24,6 +24,8 @@
 
 @import './blocks/routes/routes';
 @import './blocks/routes/__description/routes__description';
+@import './blocks/routes/__title/routes__title';
+@import './blocks/routes/__text/routes__text';
 @import './blocks/routes/__button-link/routes__button-link';
 @import './blocks/routes/__image-wrapper/routes__image-wrapper';
 @import './blocks/routes/__image/routes__image';
@@ -36,6 +38,7 @@
 @import './blocks/button-link/button-link';
 
 @import './blocks/bike-type/bike-type';
+@import './blocks/bike-type/_disabled/bike-type_disabled';
 @import './blocks/bike-type/__name/bike-type__name';
 @import './blocks/bike-type/__line/bike-type__line';
 

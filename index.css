@@ -635,34 +635,125 @@ html {
 }
 
 .routes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: unset;
-      -ms-flex-align: unset;
-          align-items: unset;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   position: relative;
 }
 
 .routes__description {
-  padding-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100px, 460px) minmax(450px, 1fr);
+      grid-template-columns: minmax(100px, 460px) minmax(450px, 1fr);
+  -ms-grid-rows: auto auto auto 1fr;
+      grid-template-rows: auto auto auto 1fr;
+}
+
+@media (max-width: 868px) {
+  .routes__description {
+    -ms-grid-columns: minmax(100px, 360px) minmax(350px, 1fr);
+        grid-template-columns: minmax(100px, 360px) minmax(350px, 1fr);
+  }
+}
+
+@media (max-width: 512px) {
+  .routes__description {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.routes__title {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #151515;
+  letter-spacing: -.5px;
+  margin: 80px 0 50px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+@media (max-width: 868px) {
+  .routes__title {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 712px) {
-  .routes__description {
-    padding-top: 40px;
+  .routes__title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 712px) {
+  .routes__title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
+.routes__text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  margin: 0;
+  max-width: 460px;
+  color: #222;
+  opacity: .7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+@media (max-width: 868px) {
+  .routes__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 712px) {
+  .routes__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 512px) {
+  .routes__text {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
 }
 
 .routes__button-link {
   margin: 50px 0 168px;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
 }
 
 @media (max-width: 1024px) {
@@ -677,12 +768,53 @@ html {
   }
 }
 
+@media (max-width: 512px) {
+  .routes__button-link {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
 .routes__image-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 610px;
   margin: 20px 0 0 40px;
+  justify-self: end;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+@media (max-width: 868px) {
+  .routes__image-wrapper {
+    height: 90%;
+  }
+}
+
+@media (max-width: 712px) {
+  .routes__image-wrapper {
+    height: 80%;
+  }
+}
+
+@media (max-width: 512px) {
+  .routes__image-wrapper {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
 }
 
 .routes__image {
@@ -779,6 +911,7 @@ html {
   cursor: url(./images/cursor.svg), auto;
   position: relative;
   z-index: 1;
+  height: 50px;
 }
 
 .button-link::before {
@@ -813,6 +946,20 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+@media (max-width: 512px) {
+  .bike-type_disabled {
+    display: none;
+  }
 }
 
 .bike-type__name {
@@ -1383,19 +1530,6 @@ html {
 }
 
 .training {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: unset;
-      -ms-flex-align: unset;
-          align-items: unset;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   padding: 150px 120px 120px 0;
   display: -ms-grid;
   display: grid;
