@@ -1959,6 +1959,7 @@ html {
   padding: 20px;
   width: 100%;
   cursor: url(./images/cursor.svg), auto;
+  margin-bottom: 22px;
 }
 
 @media (max-width: 712px) {
@@ -1971,12 +1972,25 @@ html {
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   color: #151515;
-  margin-top: 22px;
   cursor: url(./images/cursor.svg), auto;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  margin-top: 0;
 }
 
 .bikes__cards-link:hover {
