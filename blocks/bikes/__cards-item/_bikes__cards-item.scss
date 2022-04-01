@@ -10,4 +10,10 @@
   @media (max-width: $tablets) {
     margin-right: 10px;
   }
+
+  @media (max-width: $smallTablets) {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
 }

@@ -82,14 +82,24 @@
 @import './blocks/bikes/bikes';
 @import './blocks/bikes/__header/bikes__header';
 @import './blocks/bikes/__heading/bikes__heading';
+@import './blocks/bikes/__form/bikes__form';
+@import './blocks/bikes/__form-select/bikes__form-select';
+@import './blocks/bikes/__cards-name/bikes__cards-name';
+@import './blocks/bikes/__dots-wrapper/bikes__dots-wrapper';
+@import './blocks/bikes/__dot/bikes__dot';
+@import './blocks/bikes/__dot/_active/bikes__dot_active';
 @import './blocks/bikes/__list/bikes__list';
+@import './blocks/bikes/__list/_type/bikes__list_type_mobile';
 @import './blocks/bikes/__item/bikes__item';
 @import './blocks/bikes/__link/bikes__link';
 @import './blocks/bikes/__link/_type/bikes__link_type_active';
 @import './blocks/bikes/__cards/bikes__cards';
+@import './blocks/bikes/__cards-wrapper/bikes__cards-wrapper';
 @import './blocks/bikes/__cards/_type/bikes__cards_disabled';
 @import './blocks/bikes/__cards-item/bikes__cards-item';
+@import './blocks/bikes/__cards-item/_type/bikes__cards-item_type_disabled';
 @import './blocks/bikes/__cards-image/bikes__cards-image';
+@import './blocks/bikes/__cards-image/_type/bikes__cards-image_type_mobile';
 @import './blocks/bikes/__cards-link/bikes__cards-link';
 
 @import './blocks/footer/footer';

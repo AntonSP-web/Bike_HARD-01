@@ -11,4 +11,8 @@
   @media (max-width: $tablets) {
     padding-top: 30px;
   }
+
+  @media (max-width: $smallTablets) {
+    padding-top: 0;
+  }
 }

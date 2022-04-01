@@ -1,0 +1,7 @@
+.bikes__cards-name {
+  margin: 0;
+
+  @media (max-width: $smallTablets) {
+    text-align: center;
+  }
+}
