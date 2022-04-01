@@ -12,11 +12,14 @@
   @media (max-width: $tablets) {
     font-size: 14px;
     line-height: 24px;
-  }
-
-  @media (max-width: $smallTablets) {
     grid-row: 3/4;
     grid-column: 1/2;
     margin: 40px 0;
+  }
+
+  @media (max-width: $smallTablets) {
+    // grid-row: 3/4;
+    // grid-column: 1/2;
+    // margin: 40px 0;
   }
 }
