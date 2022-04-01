@@ -124,7 +124,7 @@
       <section class="bikes" id="bikes">
         <div class="bikes__header">
           <h2 class="bikes__heading">Велосипеды</h2>
-          <ul class="bikes__list">
+          <ul class="bikes__list bikes__list_type_mobile">
             <li class="bikes__item">
               <a href="#" class="bikes__link bikes__link_type_active" data-type="highway">Шоссе</a>
             </li>
@@ -137,16 +137,25 @@
           </ul>
         </div>
 
+        <form action="#" class="bike__form">
+          <select name="bikes" class="bike__form-select">
+            <option value="highway">Шоссе</option>
+            <option value="gravel">Грэвел</option>
+            <option value="TT">TT</option>
+          </select>
+        </form>
+
+
         <ul class="bikes__cards bikes__cards_type_highway" data-type="highway">
           <li class="bikes__cards-item">
             <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" target="_blank" class="bikes__cards-link">
               <img src="./images/highway/Cervelo Caledonia-5.png" alt="велосипед Cervelo Caledonia-5" class="bikes__cards-image">Cervelo Caledonia-5</a>
           </li>
-          <li class="bikes__cards-item">
+          <li class="bikes__cards-item bikes__cards-item_type_disabled">
             <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J" target="_blank" class="bikes__cards-link">
               <img src="./images/highway/Cannondale Systemsix Himod.png" alt="велосипед Cannondale Systemsix Himod" class="bikes__cards-image">Cannondale Systemsix Himod</a>
           </li>
-          <li class="bikes__cards-item">
+          <li class="bikes__cards-item bikes__cards-item_type_disabled">
             <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF" target="_blank" class="bikes__cards-link">
               <img src="./images/highway/Trek Domane SL-7.png" alt="велосипед Trek Domane SL-7" class="bikes__cards-image">Trek Domane SL-7</a>
           </li>
