@@ -126,11 +126,13 @@ highwayLinks.forEach(link => {
   })
 })
 
+// смена блоков с велосипедами при выборе в select в блоке велосипеды
+
 const bikesForm = bikes.querySelector('.bikes__form');
 const select = bikes.querySelector('.bikes__form-select');
 const optionForm = bikesForm.querySelectorAll('option');
 
-select.addEventListener('change', () => {
+select.addEventListener('change', (evt) => {
   bikeCards.forEach(card => {
     if(card.getAttribute('data-type') === select.value) {
       card.classList.remove('bikes__cards_disabled');
@@ -140,7 +142,40 @@ select.addEventListener('change', () => {
   })
 })
 
-const bikesItem = bikes.querySelectorAll('.bikes__cards-item');
+// смена карточек велосипеда одного блока в мобильной версии
+
+function selectValue() {
+  return select.value;
+}
+
+const bikesItems = bikes.querySelectorAll('.bikes__cards-item');
+const dots = bikes.querySelectorAll('.bikes__dot');
+const dotsArr = Array.from(dots);
+
+dotsArr.forEach(dot => {
+  dot.addEventListener('click', (evt) => {
+    for(let i = 0; i < dotsArr.length; i++) {
+      if(dotsArr[i] === evt.target) {
+        dotsArr[i].classList.add('bikes__dot_active')
+      } else {
+        dotsArr[i].classList.remove('bikes__dot_active');
+      }
+    }
+
+
+    let bikeType = selectValue();
+    let bikeCard = bikes.querySelector(`ul[data-type="${bikeType}"]`);
+    let bikeItem = bikeCard.querySelectorAll('.bikes__cards-item');
+    let index = dotsArr.indexOf(dot);
+    for(let i = 0; i < bikeItem.length; i++) {
+      if(bikeItem[i] !== bikeItem[index]) {
+        bikeItem[i].classList.add('bikes__cards-item_type_disabled');
+      } else {
+        bikeItem[i].classList.remove('bikes__cards-item_type_disabled');
+      }
+    }
+  })
+})
 
 
 // закртытие шторки меню при нажатии одного из элементов навигации в меню
