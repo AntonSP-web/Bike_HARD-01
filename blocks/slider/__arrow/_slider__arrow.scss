@@ -35,4 +35,9 @@
     height: 35px;
     width: 35px;
   }
+
+  @media (max-width: $mobile) {
+    height: 24px;
+    width: 24px;
+  }
 }

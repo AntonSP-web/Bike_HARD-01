@@ -13,5 +13,11 @@
 
   @media (max-width: $smallTablets) {
     flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
   }
 }

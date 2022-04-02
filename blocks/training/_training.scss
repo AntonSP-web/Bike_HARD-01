@@ -20,4 +20,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+
+  @media (max-width: $smallTablets) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
+  }
 }

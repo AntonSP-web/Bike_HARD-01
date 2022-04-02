@@ -11,7 +11,11 @@
   }
 
   @media (max-width: $smallTablets) {
-    padding-right: 30px;
+    padding: 40px 30px 0 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
   }
 }
 

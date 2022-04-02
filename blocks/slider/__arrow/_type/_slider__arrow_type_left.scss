@@ -3,12 +3,16 @@
   background: url(./images/arrow-left.svg) no-repeat;
   width: 12px;
   height: 18px;
-  background-size: 10px;
+  background-size: contain;
 
   @media (max-width: $smallTablets) {
     width: 10px;
     height: 14px;
-    background-size: 8px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 6px;
+    height: 10px;
   }
 }
 

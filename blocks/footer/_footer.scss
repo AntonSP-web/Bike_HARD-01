@@ -15,4 +15,8 @@
   @media (max-width: $tablets) {
     padding: 30px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 30px 18px;
+  }
 }

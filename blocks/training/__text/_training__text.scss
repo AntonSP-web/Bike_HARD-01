@@ -16,4 +16,9 @@
     grid-column: 1/2;
     margin: 40px 0;
   }
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
