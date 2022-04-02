@@ -13,4 +13,13 @@
     padding-right: 30px;
     padding-bottom: 30px;
   }
+
+  @media (max-width: $smallTablets) {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
+  }
 }

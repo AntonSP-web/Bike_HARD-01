@@ -10,4 +10,8 @@
     grid-column: 1/2;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $smallTablets) {
+    margin-top: 0;
+  }
 }

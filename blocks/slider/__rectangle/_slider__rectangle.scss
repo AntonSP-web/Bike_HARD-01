@@ -1,4 +1,16 @@
 .slider__rectangle {
   position: absolute;
   bottom: 16px;
+
+  @media (max-width: $smallNotebooks) {
+    width: 90px;
+  }
+
+  @media (max-width: $smallTablets) {
+    width: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 70px;
+  }
 }

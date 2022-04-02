@@ -1,7 +1,7 @@
 .routes__description {
   display: grid;
   grid-template-columns: minmax(100px, 460px) minmax(450px, 1fr);
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto min-content 1fr;
 
   @media (max-width: $smallNotebooks) {
     grid-template-columns: minmax(100px, 360px) minmax(300px, 1fr);
@@ -9,5 +9,6 @@
 
   @media (max-width: $smallTablets) {
     grid-template-columns: 1fr;
+    border-bottom: 1px solid $borderSection;
   }
 }

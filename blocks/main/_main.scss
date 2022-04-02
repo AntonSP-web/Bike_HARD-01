@@ -8,4 +8,8 @@
   @media (max-width: $tablets) {
     padding-left: 30px;
   }
+
+  @media (max-width: $mobile) {
+    padding-left: 18px;
+  }
 }

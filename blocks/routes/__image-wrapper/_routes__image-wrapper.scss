@@ -17,5 +17,12 @@
   @media (max-width: $smallTablets) {
     grid-row: 2/3;
     grid-column: 1/2;
+    margin-top: 0;
+    max-height: 400px;
+    height: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    max-height: 348px;
   }
 }

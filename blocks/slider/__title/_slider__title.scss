@@ -18,5 +18,11 @@
   @media (max-width: $smallTablets) {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 40px;
   }
 }

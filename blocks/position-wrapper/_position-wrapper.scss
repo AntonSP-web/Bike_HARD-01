@@ -3,6 +3,8 @@
   top: 348px;
   right: 28%;
   height: 430px;
+  filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+  z-index: 1;
 
   @media (max-width: $notebooks) {
     right: 15%;
@@ -15,5 +17,9 @@
 
   @media (max-width: $tablets) {
     top: 200px;
+  }
+
+  @media (max-width: $smallTablets) {
+    left: 0;
   }
 }
