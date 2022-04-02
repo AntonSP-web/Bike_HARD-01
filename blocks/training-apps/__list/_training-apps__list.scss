@@ -5,7 +5,7 @@
   list-style-type: none;
   align-self: end;
 
-  @media (max-width: $smallTablets) {
+  @media (max-width: $tablets) {
     grid-row: 4/5;
     grid-column: 1/2;
     margin-bottom: 30px;

@@ -65,8 +65,12 @@
 @import './blocks/slider/__cards/slider__cards';
 @import './blocks/slider/__cards/_disabled/slider__cards_disabled';
 @import './blocks/slider/__card/slider__card';
+@import './blocks/slider/_disabled/slider_disabled';
 
 @import './blocks/slider/__rectangle/slider__rectangle';
+@import './blocks/slider/__rectangle/_type/slider__rectangle_type_highway';
+@import './blocks/slider/__rectangle/_type/slider__rectangle_type_gravel';
+@import './blocks/slider/__rectangle/_type/slider__rectangle_type_tt';
 
 @import './blocks/training/training';
 @import './blocks/training/__title/training__title';
