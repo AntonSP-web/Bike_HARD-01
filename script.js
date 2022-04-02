@@ -126,6 +126,21 @@ highwayLinks.forEach(link => {
   })
 })
 
+const bikesForm = bikes.querySelector('.bikes__form');
+const select = bikes.querySelector('.bikes__form-select');
+const optionForm = bikesForm.querySelectorAll('option');
+
+select.addEventListener('change', () => {
+  bikeCards.forEach(card => {
+    if(card.getAttribute('data-type') === select.value) {
+      card.classList.remove('bikes__cards_disabled');
+    } else {
+      card.classList.add('bikes__cards_disabled');
+    }
+  })
+})
+
+const bikesItem = bikes.querySelectorAll('.bikes__cards-item');
 
 
 // закртытие шторки меню при нажатии одного из элементов навигации в меню
