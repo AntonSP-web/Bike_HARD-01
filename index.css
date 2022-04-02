@@ -649,8 +649,8 @@ html {
 
 @media (max-width: 868px) {
   .routes__description {
-    -ms-grid-columns: minmax(100px, 360px) minmax(350px, 1fr);
-        grid-template-columns: minmax(100px, 360px) minmax(350px, 1fr);
+    -ms-grid-columns: minmax(100px, 360px) minmax(300px, 1fr);
+        grid-template-columns: minmax(100px, 360px) minmax(300px, 1fr);
   }
 }
 
@@ -693,7 +693,7 @@ html {
   }
 }
 
-@media (max-width: 712px) {
+@media (max-width: 512px) {
   .routes__title {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -701,6 +701,7 @@ html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    margin-top: 40px;
   }
 }
 
@@ -996,7 +997,7 @@ html {
 .position-wrapper {
   position: absolute;
   top: 348px;
-  right: 25%;
+  right: 28%;
   height: 430px;
 }
 
@@ -1526,10 +1527,25 @@ html {
   }
 }
 
+.slider_disabled {
+  display: none;
+}
+
 .slider__rectangle {
-  content: url(./images/rectangle.svg);
   position: absolute;
   bottom: 16px;
+}
+
+.slider__rectangle_type_highway {
+  content: url(./images/rectangle.svg);
+}
+
+.slider__rectangle_type_gravel {
+  content: url(./images/rectangle-gravel.svg);
+}
+
+.slider__rectangle_type_tt {
+  content: url(./images/rectangle-tt.svg);
 }
 
 .training {
@@ -1588,13 +1604,7 @@ html {
   .training__title {
     font-size: 40px;
     line-height: 45px;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    margin: 40px 0;
+    margin-bottom: 25px;
   }
 }
 
@@ -1672,6 +1682,7 @@ html {
     -ms-grid-column-align: unset;
         justify-self: unset;
     max-width: 100%;
+    max-height: 350px;
   }
 }
 

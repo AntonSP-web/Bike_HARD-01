@@ -17,8 +17,9 @@
     margin-bottom: 25px;
   }
 
-  @media (max-width: $tablets) {
+  @media (max-width: $smallTablets) {
     grid-row: 1/2;
     grid-column: 1/2;
+    margin-top: 40px;
   }
 }
