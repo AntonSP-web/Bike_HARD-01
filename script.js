@@ -2,6 +2,7 @@
  хотелось. А на вещи поумнее пока знаний не хватает, пока только основы прошли */
 
 const page = document.querySelector('.page');
+const footer = page.querySelector('.footer');
 const tumbler = page.querySelector('.theme-tumbler_place_header');
 const tumblerFooter = page.querySelector('.theme-tumbler_place_footer');
 const tumblerWrapper = tumbler.querySelector('.theme-tumbler__wrapper');
@@ -12,46 +13,166 @@ const tumblerWrapperFooter = tumblerFooter.querySelector('.theme-tumbler__wrappe
 const themeDayFooter = tumblerFooter.querySelector('.theme-tumbler__day');
 const themeNightFooter = tumblerFooter.querySelector('.theme-tumbler__night');
 
+const form = page.querySelector('.form-subscribe');
+const input = form.querySelector('.form-subscribe__input');
+const inputOk = form.querySelector('.form-subscribe__submit');
+
+const headings = page.querySelectorAll('.heading');
+const texts = page.querySelectorAll('.text');
+const header = page.querySelector('.header');
+const curtain = page.querySelector('.hamburger__curtain');
+const hamCross = page.querySelector('.hamburger__line');
+const arrowBtn = page.querySelectorAll('.slider__arrow');
+
+const slider = page.querySelector('.slider');
+const sliderButtons = slider.querySelector('.slider__buttons');
+const leftArrow = slider.querySelector('.slider__arrow_type_left');
+const rightArrow = slider.querySelector('.slider__arrow_type_right');
+const sliderTitles = slider.querySelectorAll('.slider__title');
+const sliderTexts = slider.querySelectorAll('.slider__text');
+const sliderImages = slider.querySelectorAll('.slider__cards');
+let counter = 0;
+
 // переключение темы при клике на иконку день-ночь и по клику только по тумблеру
+
+//переключатель в хэдере
 
 tumbler.addEventListener('click', () => {
   tumblerWrapper.classList.toggle('theme-tumbler__wrapper_type_night');
   if(tumblerWrapper.classList.contains('theme-tumbler__wrapper_type_night')) {
-    page.style.backgroundColor = '#333';
+    page.classList.add('theme-night_property_bg-color');
+    header.classList.add('theme-night_property_bg-color');
+    curtain.classList.add('theme-night_property_bg-color');
+    inputOk.classList.add('footer_theme_night');
+    footer.classList.add('footer_theme_night');
+    input.classList.add('form-subscribe__input_theme_night');
+    input.classList.add('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.add('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.add('theme-night_property_text-color'));
+    hamCross.classList.add('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.add('theme-night_property_btn-bg'));
+    leftArrow.classList.add('slider__arrow_type_left-night');
+    rightArrow.classList.add('slider__arrow_type_right-night');
   } else {
-    page.style.backgroundColor = '#f4f4f4';
+    page.classList.remove('theme-night_property_bg-color');
+    header.classList.remove('theme-night_property_bg-color');
+    curtain.classList.remove('theme-night_property_bg-color');
+    inputOk.classList.remove('footer_theme_night');
+    footer.classList.remove('footer_theme_night');
+    input.classList.remove('form-subscribe__input_theme_night');
+    input.classList.remove('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.remove('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.remove('theme-night_property_text-color'));
+    hamCross.classList.remove('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.remove('theme-night_property_btn-bg'));
+    leftArrow.classList.remove('slider__arrow_type_left-night');
+    rightArrow.classList.remove('slider__arrow_type_right-night');
   }
 })
 
 tumbler.addEventListener('click', (evt) => {
   if(evt.target === themeDay && tumblerWrapper.classList.contains('theme-tumbler__wrapper_type_night')) {
     tumblerWrapper.classList.toggle('theme-tumbler__wrapper_type_night');
-    page.style.backgroundColor = '#f4f4f4';
+    page.classList.remove('theme-night_property_bg-color');
+    header.classList.remove('theme-night_property_bg-color');
+    curtain.classList.remove('theme-night_property_bg-color');
+    inputOk.classList.remove('footer_theme_night');
+    footer.classList.remove('footer_theme_night');
+    input.classList.remove('form-subscribe__input_theme_night');
+    input.classList.remove('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.remove('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.remove('theme-night_property_text-color'));
+    hamCross.classList.remove('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.remove('theme-night_property_btn-bg'));
+    leftArrow.classList.remove('slider__arrow_type_left-night');
+    rightArrow.classList.remove('slider__arrow_type_right-night');
   }
   if(evt.target === themeNight && !(tumblerWrapper.classList.contains('theme-tumbler__wrapper_type_night'))) {
     tumblerWrapper.classList.toggle('theme-tumbler__wrapper_type_night');
-    page.style.backgroundColor = '#333';
+    page.classList.add('theme-night_property_bg-color');
+    header.classList.add('theme-night_property_bg-color');
+    curtain.classList.add('theme-night_property_bg-color');
+    inputOk.classList.add('footer_theme_night');
+    footer.classList.add('footer_theme_night');
+    input.classList.add('form-subscribe__input_theme_night');
+    input.classList.add('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.add('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.add('theme-night_property_text-color'));
+    hamCross.classList.add('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.add('theme-night_property_btn-bg'));
+    leftArrow.classList.add('slider__arrow_type_left-night');
+    rightArrow.classList.add('slider__arrow_type_right-night');
   }
   checkTumbler();
 })
 
+// переключатель в футере
+
 tumblerFooter.addEventListener('click', () => {
   tumblerWrapperFooter.classList.toggle('theme-tumbler__wrapper_type_night');
   if(tumblerWrapperFooter.classList.contains('theme-tumbler__wrapper_type_night')) {
-    page.style.backgroundColor = '#333';
+    page.classList.add('theme-night_property_bg-color');
+    header.classList.add('theme-night_property_bg-color');
+    curtain.classList.add('theme-night_property_bg-color');
+    inputOk.classList.add('footer_theme_night');
+    footer.classList.add('footer_theme_night');
+    input.classList.add('form-subscribe__input_theme_night');
+    input.classList.add('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.add('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.add('theme-night_property_text-color'));
+    hamCross.classList.add('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.add('theme-night_property_btn-bg'));
+    leftArrow.classList.add('slider__arrow_type_left-night');
+    rightArrow.classList.add('slider__arrow_type_right-night');
   } else {
-    page.style.backgroundColor = '#f4f4f4';
+    page.classList.remove('theme-night_property_bg-color');
+    header.classList.remove('theme-night_property_bg-color');
+    curtain.classList.remove('theme-night_property_bg-color');
+    inputOk.classList.remove('footer_theme_night');
+    footer.classList.remove('footer_theme_night');
+    input.classList.remove('form-subscribe__input_theme_night');
+    input.classList.remove('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.remove('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.remove('theme-night_property_text-color'));
+    hamCross.classList.remove('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.remove('theme-night_property_btn-bg'));
+    leftArrow.classList.remove('slider__arrow_type_left-night');
+    rightArrow.classList.remove('slider__arrow_type_right-night');
   }
 })
 
 tumblerFooter.addEventListener('click', (evt) => {
   if(evt.target === themeDayFooter && tumblerWrapperFooter.classList.contains('theme-tumbler__wrapper_type_night')) {
     tumblerWrapperFooter.classList.toggle('theme-tumbler__wrapper_type_night');
-    page.style.backgroundColor = '#f4f4f4';
+    page.classList.remove('theme-night_property_bg-color');
+    header.classList.remove('theme-night_property_bg-color');
+    curtain.classList.remove('theme-night_property_bg-color');
+    inputOk.classList.remove('footer_theme_night');
+    footer.classList.remove('footer_theme_night');
+    input.classList.remove('form-subscribe__input_theme_night');
+    input.classList.remove('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.remove('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.remove('theme-night_property_text-color'));
+    hamCross.classList.remove('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.remove('theme-night_property_btn-bg'));
+    leftArrow.classList.remove('slider__arrow_type_left-night');
+    rightArrow.classList.remove('slider__arrow_type_right-night');
   }
   if(evt.target === themeNightFooter && !(tumblerWrapperFooter.classList.contains('theme-tumbler__wrapper_type_night'))) {
     tumblerWrapperFooter.classList.toggle('theme-tumbler__wrapper_type_night');
-    page.style.backgroundColor = '#333';
+    page.classList.add('theme-night_property_bg-color');
+    header.classList.add('theme-night_property_bg-color');
+    curtain.classList.add('theme-night_property_bg-color');
+    inputOk.classList.add('footer_theme_night');
+    footer.classList.add('footer_theme_night');
+    input.classList.add('form-subscribe__input_theme_night');
+    input.classList.add('theme-night_property_input-color');
+    headings.forEach(heading => heading.classList.add('theme-night_property_title-color'));
+    texts.forEach(text => text.classList.add('theme-night_property_text-color'));
+    hamCross.classList.add('hamburger__line_type_night');
+    arrowBtn.forEach(btn => btn.classList.add('theme-night_property_btn-bg'));
+    leftArrow.classList.add('slider__arrow_type_left-night');
+    rightArrow.classList.add('slider__arrow_type_right-night');
   }
   checkTumblerFooter();
 })
@@ -76,10 +197,6 @@ function checkTumblerFooter() {
 }
 
 //появление кнопки ОК в инпуте в футере при появлении там курсора
-
-const input = page.querySelector('.form-subscribe__input');
-const inputOk = page.querySelector('.form-subscribe__submit');
-const form = page.querySelector('.form-subscribe');
 
 // form.addEventListener("focusin", () => inputOk.classList.remove('form-subscribe__submit_type_disabled'));
 
@@ -194,14 +311,6 @@ menuLinks.forEach(link => {
 
 // смена блоков шоссее гревел тт и картинок к ним по нажатию на кнопку
 
-const slider = page.querySelector('.slider');
-const sliderButtons = slider.querySelector('.slider__buttons');
-const leftArrow = slider.querySelector('.slider__arrow_type_left');
-const rightArrow = slider.querySelector('.slider__arrow_type_right');
-const sliderTitles = slider.querySelectorAll('.slider__title');
-const sliderTexts = slider.querySelectorAll('.slider__text');
-const sliderImages = slider.querySelectorAll('.slider__cards');
-let counter = 0;
 
 sliderButtons.addEventListener('click', (evt) => {
   let target = evt.target;

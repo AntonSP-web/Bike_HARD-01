@@ -1,0 +1,11 @@
+.hamburger__line_type_night {
+  background-color: $btnColor;
+
+  &::before {
+    background-color: $btnColor;
+  }
+
+  &::after {
+    background-color: $btnColor;
+  }
+}

@@ -1,7 +1,7 @@
-.slider__arrow_type_right::before {
+.slider__arrow_type_left-night::before {
   content: '';
-  background: url(./images/arrow-buttons/arrow-right.svg) no-repeat;
-  width: 10px;
+  background: url(./images/arrow-buttons/arrow-left-night.svg) no-repeat;
+  width: 12px;
   height: 18px;
   background-size: contain;
 
@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $mobile) {
-    width: 5px;
+    width: 6px;
     height: 10px;
   }
 }
