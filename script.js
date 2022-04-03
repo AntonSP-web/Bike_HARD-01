@@ -1,3 +1,6 @@
+/* тут многое на костылях, сам понимаю, но сторонние библиотеки пока использовать не
+ хотелось. А на вещи поумнее пока знаний не хватает, пока только основы прошли */
+
 const page = document.querySelector('.page');
 const tumbler = page.querySelector('.theme-tumbler_place_header');
 const tumblerFooter = page.querySelector('.theme-tumbler_place_footer');
@@ -143,10 +146,10 @@ select.addEventListener('change', (evt) => {
 })
 
 // смена карточек велосипеда одного блока в мобильной версии
+// они не синхронизированы с версией десктоп, поэтому при уменьшении размера до мобильного
+// будут работать если сначала выбрать в селекте тип велосипеда
 
-function selectValue() {
-  return select.value;
-}
+
 
 const bikesItems = bikes.querySelectorAll('.bikes__cards-item');
 const dots = bikes.querySelectorAll('.bikes__dot');
@@ -162,8 +165,7 @@ dotsArr.forEach(dot => {
       }
     }
 
-
-    let bikeType = selectValue();
+    let bikeType = select.value;
     let bikeCard = bikes.querySelector(`ul[data-type="${bikeType}"]`);
     let bikeItem = bikeCard.querySelectorAll('.bikes__cards-item');
     let index = dotsArr.indexOf(dot);
@@ -190,3 +192,56 @@ menuLinks.forEach(link => {
   })
 })
 
+// смена блоков шоссее гревел тт и картинок к ним по нажатию на кнопку
+
+const slider = page.querySelector('.slider');
+const sliderButtons = slider.querySelector('.slider__buttons');
+const leftArrow = slider.querySelector('.slider__arrow_type_left');
+const rightArrow = slider.querySelector('.slider__arrow_type_right');
+const sliderTitles = slider.querySelectorAll('.slider__title');
+const sliderTexts = slider.querySelectorAll('.slider__text');
+const sliderImages = slider.querySelectorAll('.slider__cards');
+let counter = 0;
+
+sliderButtons.addEventListener('click', (evt) => {
+  let target = evt.target;
+
+  if(target === rightArrow) {
+    counter ++;
+    if(counter > 2) {
+      counter = 0;
+    }
+    console.log(counter)
+    for(let i = 0; i < sliderImages.length; i++) {
+      if(sliderImages[i] === sliderImages[counter]) {
+        sliderImages[i].classList.remove('slider_disabled');
+        sliderTexts[i].classList.remove('slider_disabled');
+        sliderTitles[i].classList.remove('slider_disabled');
+      } else {
+        sliderImages[i].classList.add('slider_disabled');
+        sliderTexts[i].classList.add('slider_disabled');
+        sliderTitles[i].classList.add('slider_disabled');
+      }
+    }
+  }
+
+  if(target === leftArrow) {
+    counter--;
+    console.log(counter)
+    if(counter < 0) {
+      counter = 2;
+    }
+
+    for(let i = 0; i < sliderImages.length; i++) {
+      if(sliderImages[i] === sliderImages[counter]) {
+        sliderImages[i].classList.remove('slider_disabled');
+        sliderTexts[i].classList.remove('slider_disabled');
+        sliderTitles[i].classList.remove('slider_disabled');
+      } else {
+        sliderImages[i].classList.add('slider_disabled');
+        sliderTexts[i].classList.add('slider_disabled');
+        sliderTitles[i].classList.add('slider_disabled');
+      }
+    }
+  }
+})
