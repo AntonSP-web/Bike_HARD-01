@@ -558,7 +558,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
   position: fixed;
-  top: 28px;
+  top: 24px;
   right: 18px;
   width: 22px;
   height: 22px;
@@ -871,6 +871,7 @@ html {
 @media (max-width: 320px) {
   .routes__image-wrapper {
     max-height: 348px;
+    margin-left: 30px;
   }
 }
 
@@ -1087,6 +1088,11 @@ html {
 
 @media (max-width: 512px) {
   .position-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    top: 311px;
     left: 0;
   }
 }
@@ -1126,6 +1132,7 @@ html {
 @media (max-width: 512px) {
   .bike-sticky {
     width: 285px;
+    padding: 10px 26px;
   }
 }
 
@@ -1258,7 +1265,7 @@ html {
 @media (max-width: 512px) {
   .quote__text {
     font-size: 23px;
-    line-height: 29px;
+    line-height: 28px;
     font-weight: 600;
     letter-spacing: -0.5px;
     margin: 40px 0;
@@ -1824,7 +1831,7 @@ html {
 @media (max-width: 512px) {
   .training__title {
     border-top: 1px solid #e3e3e3;
-    padding-top: 40px;
+    padding-top: 37px;
     margin-bottom: 40px;
   }
 }
@@ -2111,7 +2118,7 @@ html {
 .bikes__form-select {
   width: 114px;
   height: 30px;
-  padding: 8px 12px;
+  padding: 0 10px;
   border: 1px solid #E3E3E3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2121,6 +2128,12 @@ html {
   font-size: 11px;
   line-height: 14px;
   color: #151515;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(./images/arrow-select.svg) no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: calc(100% - 12px);
 }
 
 .bikes__cards-name {
@@ -2150,6 +2163,12 @@ html {
   }
 }
 
+@media (max-width: 320px) {
+  .bikes__dots-wrapper {
+    max-width: 22px;
+  }
+}
+
 @media (max-width: 512px) {
   .bikes__dot {
     width: 8px;
@@ -2163,6 +2182,13 @@ html {
   }
   .bikes__dot:hover {
     opacity: .7;
+  }
+}
+
+@media (max-width: 320px) {
+  .bikes__dot {
+    width: 4px;
+    height: 4px;
   }
 }
 
@@ -2426,7 +2452,7 @@ html {
 
 @media (max-width: 320px) {
   .footer {
-    padding: 30px 18px;
+    padding: 60px 18px 30px;
   }
 }
 
@@ -2514,6 +2540,12 @@ html {
 @media (max-width: 512px) {
   .form-subscribe__input-wrapper {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .form-subscribe__input-wrapper {
+    margin-bottom: 90px;
   }
 }
 

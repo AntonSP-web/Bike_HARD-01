@@ -1,7 +1,7 @@
 .bikes__form-select {
   width: 114px;
   height: 30px;
-  padding: 8px 12px;
+  padding: 0 10px;
   border: 1px solid #E3E3E3;
   box-sizing: border-box;
   border-radius: 2px;
@@ -10,4 +10,8 @@
   font-size: 11px;
   line-height: 14px;
   color: $base-fontColor;
+  appearance: none;
+  background: url(./images/arrow-select.svg) no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: calc(100% - 12px);
 }

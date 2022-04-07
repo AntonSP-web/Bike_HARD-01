@@ -20,6 +20,9 @@
   }
 
   @media (max-width: $smallTablets) {
+    display: flex;
+    height: auto;
+    top: 311px;
     left: 0;
   }
 }
