@@ -1,4 +1,5 @@
 .footer__copyright {
   @include fonts($linkFontSize, 20px, 600);
   color: $copyright-fontColor;
+  margin: 0;
 }

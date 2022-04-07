@@ -475,7 +475,6 @@ html {
   text-decoration: none;
   color: #151515;
   cursor: url(./images/cursor.svg), auto;
-  letter-spacing: .7px;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
@@ -1059,7 +1058,7 @@ html {
 
 .position-wrapper {
   position: absolute;
-  top: 348px;
+  top: 392px;
   right: 28%;
   height: 430px;
   -webkit-filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
@@ -1095,7 +1094,7 @@ html {
 .bike-sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 348px;
+  top: 466px;
   z-index: 50;
   width: 440px;
   height: auto;
@@ -1258,7 +1257,9 @@ html {
 
 @media (max-width: 512px) {
   .quote__text {
-    font-size: 24px;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: 600;
     letter-spacing: -0.5px;
     margin: 40px 0;
   }
@@ -2454,6 +2455,7 @@ html {
   line-height: 20px;
   font-weight: 600;
   color: #cfcfcf;
+  margin: 0;
 }
 
 .footer__logo {
@@ -2524,6 +2526,10 @@ html {
   min-width: 50px;
   padding: 0;
   background-color: #efefef;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 26px;
+  color: #151515;
   cursor: url(./images/cursor.svg), auto;
 }
 
@@ -2532,40 +2538,24 @@ html {
 }
 
 .form-subscribe__input::-webkit-input-placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .form-subscribe__input:-ms-input-placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .form-subscribe__input::-ms-input-placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .form-subscribe__input::placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
