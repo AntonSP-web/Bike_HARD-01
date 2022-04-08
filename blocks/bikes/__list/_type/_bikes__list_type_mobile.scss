@@ -1,0 +1,5 @@
+.bikes__list_type_mobile {
+  @media (max-width: $smallTablets) {
+    display: none;
+  }
+}

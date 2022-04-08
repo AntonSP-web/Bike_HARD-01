@@ -1,0 +1,15 @@
+.main {
+  padding-left: 120px;
+
+  @media (max-width: $bigScreen) {
+    padding-left: 60px;
+  }
+
+  @media (max-width: $tablets) {
+    padding-left: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 18px;
+  }
+}

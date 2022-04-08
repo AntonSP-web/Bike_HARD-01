@@ -1,0 +1,24 @@
+.quote__text {
+  @include fonts($quoteFontSize, 44px, 600);
+  letter-spacing: -0.5px;
+  margin: 0 0 30px;
+  color: $base-fontColor;
+
+  @media (max-width: $notebooks) {
+    @include fonts(30px, 40px, 600);
+  }
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(24px, 34px, 600);
+  }
+
+  @media (max-width: $tablets) {
+    @include fonts(20px, 30px, 600);
+  }
+
+  @media (max-width: $smallTablets) {
+    @include fonts(23px, 28px, 600);
+    letter-spacing: -0.5px;
+    margin: 40px 0;
+  }
+}

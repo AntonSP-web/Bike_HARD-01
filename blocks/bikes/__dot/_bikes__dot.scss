@@ -1,0 +1,21 @@
+.bikes__dot {
+  @media (max-width: $smallTablets) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    outline: none;
+    padding: 0;
+    border: none;
+    background: #CACACA;
+    cursor: url(../images/cursor.svg), auto;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    width: 4px;
+    height: 4px;
+  }
+}

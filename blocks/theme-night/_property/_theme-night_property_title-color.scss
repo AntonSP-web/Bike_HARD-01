@@ -1,0 +1,9 @@
+.theme-night_property_title-color {
+  color: $btnColor;
+}
+
+.bikes__cards-name.theme-night_property_title-color {
+  @media(max-width: $smallTablets) {
+    color: $base-fontColor;
+  }
+}

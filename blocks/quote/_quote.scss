@@ -1,0 +1,23 @@
+.quote {
+  @include flex(space-between);
+  padding: 120px 120px 60px 0;
+
+  @media (max-width: $bigScreen) {
+    padding-right: 60px;
+  }
+
+  @media (max-width: $tablets) {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $smallTablets) {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
+  }
+}

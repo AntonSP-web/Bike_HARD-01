@@ -1,0 +1,17 @@
+.training-apps {
+  @include flex();
+  margin: 20px 0 0;
+  padding: 0;
+  list-style-type: none;
+  align-self: end;
+
+  @media (max-width: $tablets) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $smallTablets) {
+    margin-top: 0;
+  }
+}

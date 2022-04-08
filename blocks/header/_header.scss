@@ -1,0 +1,22 @@
+.header {
+  padding: 28px 120px;
+  position: sticky;
+  top: 0;
+  background-color: $base-background;
+  z-index: 100;
+  opacity: .9;
+
+  @media (max-width: $bigScreen) {
+    padding: 28px 60px;
+  }
+
+  @media (max-width: $tablets) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $smallTablets) {
+    height: 74px;
+    box-sizing: border-box;
+  }
+}

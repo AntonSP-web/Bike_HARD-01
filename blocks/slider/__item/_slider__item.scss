@@ -1,0 +1,8 @@
+.slider__item {
+  @media (max-width: $smallTablets) {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid $borderSection;
+  }
+}

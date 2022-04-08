@@ -1,0 +1,17 @@
+.header__link {
+  @include fonts($linkFontSize, 18px, 500);
+  text-decoration: none;
+  color: $base-fontColor;
+  cursor: url(../images/cursor.svg), auto;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  @media (max-width: $smallTablets) {
+    font-size: 18px;
+    text-align: center;
+    color: $base-fontColor;
+  }
+}

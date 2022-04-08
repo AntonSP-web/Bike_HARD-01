@@ -1,0 +1,24 @@
+.bikes__heading {
+  @include fonts($title-fontSize, 60px, 700);
+  margin: 0 20px 0 0;
+  letter-spacing: -0.5px;
+  color: $base-fontColor;
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(45px, 50px, 700);
+  }
+
+  @media (max-width: $tablets) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $smallTablets) {
+    margin: 40px 0;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

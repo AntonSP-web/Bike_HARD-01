@@ -1,0 +1,21 @@
+.quote__name {
+  @include fonts($quote-nameFontSize, 32px, 500);
+  color: $base-fontColor;
+  margin: 0;
+
+  @media (max-width: $notebooks) {
+    @include fonts(18px, 28px, 500);
+  }
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(16px, 26px, 500);
+  }
+
+  @media (max-width: $tablets) {
+    @include fonts(14px, 16px, 500);
+  }
+
+  @media (max-width: $smallTablets) {
+    line-height: 22px;
+  }
+}

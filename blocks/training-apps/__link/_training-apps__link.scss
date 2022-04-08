@@ -1,0 +1,20 @@
+.training-apps__link {
+  @include fonts($paragraph-fontSize, 28px, 600);
+  text-decoration: none;
+  color: $base-fontColor;
+  cursor: url(../images/cursor.svg), auto;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(16px, 26px, 600);
+  }
+
+  @media (max-width: $tablets) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

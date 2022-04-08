@@ -1,0 +1,11 @@
+.bikes__item {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (max-width: $tablets) {
+    margin-left: 20px;
+  }
+}

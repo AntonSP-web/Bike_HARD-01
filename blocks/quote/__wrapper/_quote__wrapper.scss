@@ -1,0 +1,12 @@
+.quote__wrapper {
+  @include flex(space-between, $direction: column);
+  max-width: 470px;
+  margin-left: 40px;
+
+  @media (max-width: $smallTablets) {
+    margin-left: 0;
+    max-width: 100%;
+    border-bottom: 1px solid $borderSection;
+    padding-bottom: 80px;
+  }
+}

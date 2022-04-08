@@ -1,0 +1,3 @@
+.training__wrapper {
+  @include flex(space-between, $direction: column);
+}

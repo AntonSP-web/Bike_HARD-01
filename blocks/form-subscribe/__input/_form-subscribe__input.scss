@@ -1,0 +1,30 @@
+.form-subscribe__input {
+  outline: none;
+  border: none;
+  flex-grow: 1;
+  min-width: 50px;
+  padding: 0;
+  background-color: $footerBackgroundColor;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 26px;
+  color: #151515;
+  cursor: url(../images/cursor.svg), auto;
+
+  &:focus {
+    cursor: text;
+  }
+
+  &::placeholder {
+    opacity: .7;
+    transition: opacity .3s ease;
+  }
+
+  &:hover::placeholder {
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}

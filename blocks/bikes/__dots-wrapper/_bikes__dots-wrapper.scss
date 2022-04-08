@@ -1,0 +1,14 @@
+.bikes__dots-wrapper {
+  display: none;
+
+  @media (max-width: $smallTablets) {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 0;
+    max-width: 34px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 22px;
+  }
+}

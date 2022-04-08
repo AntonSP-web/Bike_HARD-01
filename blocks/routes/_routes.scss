@@ -1,0 +1,11 @@
+.routes {
+  position: relative;
+
+  @media (max-width: $smallTablets) {
+    padding-right: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
+  }
+}

@@ -1,0 +1,5 @@
+.header__list_type_mobile {
+  @include flex($align: center, $direction: column);
+  margin-top: 140px;
+}
+

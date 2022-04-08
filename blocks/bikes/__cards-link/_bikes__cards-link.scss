@@ -1,0 +1,18 @@
+.bikes__cards-link {
+  @include fonts($paragraph-fontSize, 22px, 600);
+  @include flex($direction: column);
+  text-decoration: none;
+  color: $base-fontColor;
+  cursor: url(../images/cursor.svg), auto;
+  transition: opacity .3s ease;
+  margin-top: 0;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  @media (max-width: $tablets) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

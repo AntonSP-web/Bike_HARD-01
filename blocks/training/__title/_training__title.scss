@@ -1,0 +1,28 @@
+.training__title {
+  @include fonts($title-fontSize, 60px, 700);
+  margin: 0;
+  color: $base-fontColor;
+  letter-spacing: -.5px;
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(45px, 50px, 700);
+  }
+
+  @media (max-width: $tablets) {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $smallTablets) {
+    border-top: 1px solid $borderSection;
+    padding-top: 37px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+

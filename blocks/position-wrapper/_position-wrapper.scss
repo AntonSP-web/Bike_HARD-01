@@ -1,0 +1,28 @@
+.position-wrapper {
+  position: absolute;
+  top: 392px;
+  right: 28%;
+  height: 430px;
+  filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+  z-index: 1;
+
+  @media (max-width: $bigScreen) {
+    right: 10%;
+  }
+
+  @media (max-width: $notebooks) {
+    right: 5%;
+  }
+
+  @media (max-width: $smallNotebooks) {
+    top: 330px;
+    right: 1%;
+  }
+
+  @media (max-width: $smallTablets) {
+    display: flex;
+    height: auto;
+    top: 311px;
+    left: 0;
+  }
+}

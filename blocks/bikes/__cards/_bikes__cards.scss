@@ -1,0 +1,18 @@
+.bikes__cards {
+  @include flex(space-between);
+  margin: 0;
+  padding: 120px 0 0;
+  list-style-type: none;
+
+  @media (max-width: $smallNotebooks) {
+    padding-top: 60px;
+  }
+
+  @media (max-width: $tablets) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: $smallTablets) {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,4 @@
+.bikes__header {
+  @include flex(space-between, flex-end);
+  flex-wrap: wrap;
+}

@@ -1,0 +1,5 @@
+.bikes__dot_active {
+  @media (max-width: $smallTablets) {
+    background: $base-fontColor;
+  }
+}

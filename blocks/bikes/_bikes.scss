@@ -1,0 +1,25 @@
+.bikes {
+  padding: 60px 120px 60px 0;
+
+  @media (max-width: $bigScreen) {
+    padding-right: 60px;
+  }
+
+  @media (max-width: $smallNotebooks) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: $tablets) {
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $smallTablets) {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 18px;
+  }
+}

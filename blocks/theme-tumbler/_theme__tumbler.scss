@@ -1,0 +1,4 @@
+.theme-tumbler {
+  @include flex($align: center);
+  cursor: url(../images/cursor.svg), auto;
+}

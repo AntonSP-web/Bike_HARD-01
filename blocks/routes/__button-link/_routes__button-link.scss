@@ -1,0 +1,19 @@
+.routes__button-link {
+  margin: 50px 0 168px;
+  grid-row: 3/4;
+  grid-column: 1/2;
+
+  @media (max-width: $notebooks) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: $tablets) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: $smallTablets) {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    margin: 0 0 80px;
+  }
+}

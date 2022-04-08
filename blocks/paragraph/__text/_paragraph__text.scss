@@ -1,0 +1,16 @@
+.paragraph__text {
+  @include fonts($paragraph-fontSize, 28px, normal);
+  margin: 0;
+  max-width: 460px;
+  color: $paragraph-fontColor;
+  opacity: .7;
+
+  @media (max-width: $smallNotebooks) {
+    @include fonts(16px, 26px, normal);
+  }
+
+  @media (max-width: $tablets) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
