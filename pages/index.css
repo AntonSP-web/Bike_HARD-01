@@ -679,8 +679,8 @@ html {
 
 @media (max-width: 868px) {
   .routes__description {
-    -ms-grid-columns: minmax(100px, 360px) minmax(300px, 1fr);
-        grid-template-columns: minmax(100px, 360px) minmax(300px, 1fr);
+    -ms-grid-columns: minmax(100px, 340px) minmax(330px, 1fr);
+        grid-template-columns: minmax(100px, 340px) minmax(330px, 1fr);
   }
 }
 
@@ -840,18 +840,6 @@ html {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-}
-
-@media (max-width: 868px) {
-  .routes__image-wrapper {
-    height: 90%;
-  }
-}
-
-@media (max-width: 712px) {
-  .routes__image-wrapper {
-    height: 80%;
-  }
 }
 
 @media (max-width: 512px) {
@@ -1067,22 +1055,22 @@ html {
   z-index: 1;
 }
 
+@media (max-width: 1200px) {
+  .position-wrapper {
+    right: 10%;
+  }
+}
+
 @media (max-width: 1024px) {
   .position-wrapper {
-    right: 15%;
+    right: 5%;
   }
 }
 
 @media (max-width: 868px) {
   .position-wrapper {
-    top: 300px;
-    right: 10%;
-  }
-}
-
-@media (max-width: 712px) {
-  .position-wrapper {
-    top: 200px;
+    top: 330px;
+    right: 1%;
   }
 }
 
@@ -1126,11 +1114,6 @@ html {
 @media (max-width: 712px) {
   .bike-sticky {
     top: 200px;
-  }
-}
-
-@media (max-width: 512px) {
-  .bike-sticky {
     width: 285px;
     padding: 10px 26px;
   }
@@ -1749,15 +1732,15 @@ html {
 }
 
 .slider__rectangle_type_highway {
-  content: url(./images/rectangle/rectangle-highway.svg);
+  content: url(../images/rectangle/rectangle-highway.svg);
 }
 
 .slider__rectangle_type_gravel {
-  content: url(./images/rectangle/rectangle-gravel.svg);
+  content: url(../images/rectangle/rectangle-gravel.svg);
 }
 
 .slider__rectangle_type_tt {
-  content: url(./images/rectangle/rectangle-tt.svg);
+  content: url(../images/rectangle/rectangle-tt.svg);
 }
 
 .training {
