@@ -842,6 +842,12 @@ html {
   grid-column: 2/3;
 }
 
+@media (max-width: 1200px) {
+  .routes__image-wrapper {
+    height: 856px;
+  }
+}
+
 @media (max-width: 512px) {
   .routes__image-wrapper {
     -ms-grid-row: 2;
