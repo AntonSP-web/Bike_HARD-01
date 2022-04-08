@@ -1435,6 +1435,10 @@ html {
   }
 }
 
+.slider__title_disabled {
+  display: none;
+}
+
 .slider__text {
   font-size: 18px;
   line-height: 28px;
@@ -1476,6 +1480,10 @@ html {
     font-size: 12px;
     line-height: 18px;
   }
+}
+
+.slider__text_disabled {
+  display: none;
 }
 
 .slider__buttons {
@@ -1717,10 +1725,6 @@ html {
   }
 }
 
-.slider_disabled {
-  display: none;
-}
-
 .slider__rectangle {
   position: absolute;
   bottom: 16px;
@@ -1935,7 +1939,7 @@ html {
   height: 100%;
 }
 
-.training-apps__list {
+.training-apps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1957,7 +1961,7 @@ html {
 }
 
 @media (max-width: 712px) {
-  .training-apps__list {
+  .training-apps {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
@@ -1969,7 +1973,7 @@ html {
 }
 
 @media (max-width: 512px) {
-  .training-apps__list {
+  .training-apps {
     margin-top: 0;
   }
 }
