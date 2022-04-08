@@ -16,4 +16,8 @@
   @media (max-width: $smallTablets) {
     max-width: 100%;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 90px;
+  }
 }

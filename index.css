@@ -475,7 +475,6 @@ html {
   text-decoration: none;
   color: #151515;
   cursor: url(./images/cursor.svg), auto;
-  letter-spacing: .7px;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
@@ -559,7 +558,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
   position: fixed;
-  top: 28px;
+  top: 24px;
   right: 18px;
   width: 22px;
   height: 22px;
@@ -872,6 +871,7 @@ html {
 @media (max-width: 320px) {
   .routes__image-wrapper {
     max-height: 348px;
+    margin-left: 30px;
   }
 }
 
@@ -1059,7 +1059,7 @@ html {
 
 .position-wrapper {
   position: absolute;
-  top: 348px;
+  top: 392px;
   right: 28%;
   height: 430px;
   -webkit-filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
@@ -1088,6 +1088,11 @@ html {
 
 @media (max-width: 512px) {
   .position-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    top: 311px;
     left: 0;
   }
 }
@@ -1095,7 +1100,7 @@ html {
 .bike-sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 348px;
+  top: 466px;
   z-index: 50;
   width: 440px;
   height: auto;
@@ -1127,6 +1132,7 @@ html {
 @media (max-width: 512px) {
   .bike-sticky {
     width: 285px;
+    padding: 10px 26px;
   }
 }
 
@@ -1258,7 +1264,9 @@ html {
 
 @media (max-width: 512px) {
   .quote__text {
-    font-size: 24px;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 600;
     letter-spacing: -0.5px;
     margin: 40px 0;
   }
@@ -1427,6 +1435,10 @@ html {
   }
 }
 
+.slider__title_disabled {
+  display: none;
+}
+
 .slider__text {
   font-size: 18px;
   line-height: 28px;
@@ -1468,6 +1480,10 @@ html {
     font-size: 12px;
     line-height: 18px;
   }
+}
+
+.slider__text_disabled {
+  display: none;
 }
 
 .slider__buttons {
@@ -1709,10 +1725,6 @@ html {
   }
 }
 
-.slider_disabled {
-  display: none;
-}
-
 .slider__rectangle {
   position: absolute;
   bottom: 16px;
@@ -1823,7 +1835,7 @@ html {
 @media (max-width: 512px) {
   .training__title {
     border-top: 1px solid #e3e3e3;
-    padding-top: 40px;
+    padding-top: 37px;
     margin-bottom: 40px;
   }
 }
@@ -1890,7 +1902,7 @@ html {
           flex-direction: column;
 }
 
-.training__image-wrapper {
+.training__image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
@@ -1903,10 +1915,14 @@ html {
   display: -ms-flexbox;
   display: flex;
   justify-self: end;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 @media (max-width: 712px) {
-  .training__image-wrapper {
+  .training__image {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -1920,14 +1936,7 @@ html {
   }
 }
 
-.training__image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-}
-
-.training-apps__list {
+.training-apps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1949,7 +1958,7 @@ html {
 }
 
 @media (max-width: 712px) {
-  .training-apps__list {
+  .training-apps {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
@@ -1961,7 +1970,7 @@ html {
 }
 
 @media (max-width: 512px) {
-  .training-apps__list {
+  .training-apps {
     margin-top: 0;
   }
 }
@@ -2047,9 +2056,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2110,7 +2119,7 @@ html {
 .bikes__form-select {
   width: 114px;
   height: 30px;
-  padding: 8px 12px;
+  padding: 0 10px;
   border: 1px solid #E3E3E3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2120,15 +2129,22 @@ html {
   font-size: 11px;
   line-height: 14px;
   color: #151515;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(./images/arrow-select.svg) no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: calc(100% - 12px);
 }
 
 .bikes__cards-name {
-  margin: 0;
+  margin: 0 0 0 6px;
 }
 
 @media (max-width: 512px) {
   .bikes__cards-name {
     text-align: center;
+    margin-left: 0px;
   }
 }
 
@@ -2149,6 +2165,12 @@ html {
   }
 }
 
+@media (max-width: 320px) {
+  .bikes__dots-wrapper {
+    max-width: 22px;
+  }
+}
+
 @media (max-width: 512px) {
   .bikes__dot {
     width: 8px;
@@ -2162,6 +2184,13 @@ html {
   }
   .bikes__dot:hover {
     opacity: .7;
+  }
+}
+
+@media (max-width: 320px) {
+  .bikes__dot {
+    width: 4px;
+    height: 4px;
   }
 }
 
@@ -2343,7 +2372,7 @@ html {
   padding: 20px;
   width: 100%;
   cursor: url(./images/cursor.svg), auto;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 @media (max-width: 712px) {
@@ -2425,7 +2454,7 @@ html {
 
 @media (max-width: 320px) {
   .footer {
-    padding: 30px 18px;
+    padding: 60px 18px 30px;
   }
 }
 
@@ -2454,6 +2483,7 @@ html {
   line-height: 20px;
   font-weight: 600;
   color: #cfcfcf;
+  margin: 0;
 }
 
 .footer__logo {
@@ -2515,6 +2545,12 @@ html {
   }
 }
 
+@media (max-width: 320px) {
+  .form-subscribe__input-wrapper {
+    margin-bottom: 90px;
+  }
+}
+
 .form-subscribe__input {
   outline: none;
   border: none;
@@ -2524,6 +2560,10 @@ html {
   min-width: 50px;
   padding: 0;
   background-color: #efefef;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 26px;
+  color: #151515;
   cursor: url(./images/cursor.svg), auto;
 }
 
@@ -2532,40 +2572,24 @@ html {
 }
 
 .form-subscribe__input::-webkit-input-placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .form-subscribe__input:-ms-input-placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .form-subscribe__input::-ms-input-placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .form-subscribe__input::placeholder {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 26px;
-  color: #151515;
   opacity: .7;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;

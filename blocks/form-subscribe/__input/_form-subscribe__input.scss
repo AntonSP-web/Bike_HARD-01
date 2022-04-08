@@ -5,6 +5,10 @@
   min-width: 50px;
   padding: 0;
   background-color: $footerBackgroundColor;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 26px;
+  color: #151515;
   cursor: url(./images/cursor.svg), auto;
 
   &:focus {
@@ -12,10 +16,6 @@
   }
 
   &::placeholder {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 26px;
-    color: #151515;
     opacity: .7;
     transition: opacity .3s ease;
   }

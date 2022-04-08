@@ -58,7 +58,9 @@
 @import './blocks/slider/slider';
 @import './blocks/slider/__item/slider__item';
 @import './blocks/slider/__title/slider__title';
+@import './blocks/slider/__title/_disabled/slider__title_disabled';
 @import './blocks/slider/__text/slider__text';
+@import './blocks/slider/__text/_disabled/slider__text_disabled';
 @import './blocks/slider/__buttons/slider__buttons';
 @import './blocks/slider/__arrow/slider__arrow';
 @import './blocks/slider/__arrow/_type/slider__arrow_type_left';
@@ -68,7 +70,6 @@
 @import './blocks/slider/__cards/slider__cards';
 @import './blocks/slider/__cards/_disabled/slider__cards_disabled';
 @import './blocks/slider/__card/slider__card';
-@import './blocks/slider/_disabled/slider_disabled';
 
 @import './blocks/slider/__rectangle/slider__rectangle';
 @import './blocks/slider/__rectangle/_type/slider__rectangle_type_highway';
@@ -79,10 +80,9 @@
 @import './blocks/training/__title/training__title';
 @import './blocks/training/__text/training__text';
 @import './blocks/training/__wrapper/training__wrapper';
-@import './blocks/training/__image-wrapper/training__image-wrapper';
 @import './blocks/training/__image/training__image';
 
-@import './blocks/training-apps/__list/training-apps__list';
+@import './blocks/training-apps/training-apps';
 @import './blocks/training-apps/__item/training-apps__item';
 @import './blocks/training-apps/__link/training-apps__link';
 
@@ -102,7 +102,7 @@
 @import './blocks/bikes/__link/_type/bikes__link_type_active';
 @import './blocks/bikes/__cards/bikes__cards';
 @import './blocks/bikes/__cards-wrapper/bikes__cards-wrapper';
-@import './blocks/bikes/__cards/_type/bikes__cards_disabled';
+@import './blocks/bikes/__cards/_disabled/bikes__cards_disabled';
 @import './blocks/bikes/__cards-item/bikes__cards-item';
 @import './blocks/bikes/__cards-item/_type/bikes__cards-item_type_disabled';
 @import './blocks/bikes/__cards-image/bikes__cards-image';
