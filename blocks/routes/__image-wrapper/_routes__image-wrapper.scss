@@ -6,14 +6,6 @@
   grid-row: 1/5;
   grid-column: 2/3;
 
-  @media (max-width: $smallNotebooks) {
-    height: 90%;
-  }
-
-  @media (max-width: $tablets) {
-    height: 80%;
-  }
-
   @media (max-width: $smallTablets) {
     grid-row: 2/3;
     grid-column: 1/2;
@@ -24,5 +16,6 @@
 
   @media (max-width: $mobile) {
     max-height: 348px;
+    margin-left: 30px;
   }
 }

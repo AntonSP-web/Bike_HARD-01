@@ -5,8 +5,8 @@
   background-color: $base-background;
   padding: 20px;
   width: 100%;
-  cursor: url(./images/cursor.svg), auto;
-  margin-bottom: 22px;
+  cursor: url(../images/cursor.svg), auto;
+  margin-bottom: 18px;
 
   @media (max-width: $tablets) {
     padding: 5px;

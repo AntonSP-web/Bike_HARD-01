@@ -7,10 +7,15 @@
     padding: 0;
     border: none;
     background: #CACACA;
-    cursor: url(./images/cursor.svg), auto;
+    cursor: url(../images/cursor.svg), auto;
 
     &:hover {
       opacity: .7;
     }
+  }
+
+  @media (max-width: $mobile) {
+    width: 4px;
+    height: 4px;
   }
 }

@@ -3,7 +3,7 @@
   @include flex($direction: column);
   text-decoration: none;
   color: $base-fontColor;
-  cursor: url(./images/cursor.svg), auto;
+  cursor: url(../images/cursor.svg), auto;
   transition: opacity .3s ease;
   margin-top: 0;
 

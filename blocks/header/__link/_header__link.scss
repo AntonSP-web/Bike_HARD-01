@@ -2,8 +2,7 @@
   @include fonts($linkFontSize, 18px, 500);
   text-decoration: none;
   color: $base-fontColor;
-  cursor: url(./images/cursor.svg), auto;
-  letter-spacing: .7px;
+  cursor: url(../images/cursor.svg), auto;
   transition: opacity .3s ease;
 
   &:hover {

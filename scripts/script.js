@@ -323,13 +323,13 @@ sliderButtons.addEventListener('click', (evt) => {
     console.log(counter)
     for(let i = 0; i < sliderImages.length; i++) {
       if(sliderImages[i] === sliderImages[counter]) {
-        sliderImages[i].classList.remove('slider_disabled');
-        sliderTexts[i].classList.remove('slider_disabled');
-        sliderTitles[i].classList.remove('slider_disabled');
+        sliderImages[i].classList.remove('slider__cards_disabled');
+        sliderTexts[i].classList.remove('slider__text_disabled');
+        sliderTitles[i].classList.remove('slider__title_disabled');
       } else {
-        sliderImages[i].classList.add('slider_disabled');
-        sliderTexts[i].classList.add('slider_disabled');
-        sliderTitles[i].classList.add('slider_disabled');
+        sliderImages[i].classList.add('slider__cards_disabled');
+        sliderTexts[i].classList.add('slider__text_disabled');
+        sliderTitles[i].classList.add('slider__title_disabled');
       }
     }
   }
@@ -343,13 +343,13 @@ sliderButtons.addEventListener('click', (evt) => {
 
     for(let i = 0; i < sliderImages.length; i++) {
       if(sliderImages[i] === sliderImages[counter]) {
-        sliderImages[i].classList.remove('slider_disabled');
-        sliderTexts[i].classList.remove('slider_disabled');
-        sliderTitles[i].classList.remove('slider_disabled');
+        sliderImages[i].classList.remove('slider__cards_disabled');
+        sliderTexts[i].classList.remove('slider__text_disabled');
+        sliderTitles[i].classList.remove('slider__title_disabled');
       } else {
-        sliderImages[i].classList.add('slider_disabled');
-        sliderTexts[i].classList.add('slider_disabled');
-        sliderTitles[i].classList.add('slider_disabled');
+        sliderImages[i].classList.add('slider__cards_disabled');
+        sliderTexts[i].classList.add('slider__text_disabled');
+        sliderTitles[i].classList.add('slider__title_disabled');
       }
     }
   }
